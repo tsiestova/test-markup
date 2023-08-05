@@ -1,0 +1,31 @@
+.btn {
+  outline: none;
+  cursor: pointer;
+  font-family: var(--font-body-name);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  height: 51px;
+  padding: 0 30px;
+  border-radius: 2px;
+  border: none;
+
+  &.btn-primary {
+    background: #2E54EB;
+    color: #FFF;
+  }
+
+  &.btn-outline {
+    border: 1px solid #FFF;
+    background: transparent;
+    color: #FFF;
+  }
+
+  &.btn-light {
+    background: #FFF;
+    color: #222222;
+  }
+}

@@ -1,0 +1,46 @@
+.header {
+  height: 129px;
+  background: var(--header-color);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header-logo {
+
+}
+
+.header {
+  .layout {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header_nav-bar {
+
+  ul {
+    display: flex;
+    gap: 42px;
+  }
+}
+
+  .header__nav-item {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+
+    a {
+      color: var(--text-white);
+      text-decoration: none;
+    }
+  }
+
+  .header__btn-wrap {
+    display: flex;
+    gap: 16px;
+  }

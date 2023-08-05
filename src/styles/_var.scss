@@ -1,0 +1,18 @@
+:root {
+  --font-heading-name: 'Playfair Display', serif;
+  --font-body-name: 'Poppins', sans-serif;
+
+  --font-heading-primary: 700 116px / 110% var(--font-heading-name);
+  --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
+
+  //text-colors
+  --text-black: #20202C;
+  --text-white: #FFFFFF;
+
+  //sections-colors
+  --header-color: rgba(34, 34, 34, 0.80);
+  --section-color-dark: #222222;
+  --section-color-light: #FFFFFF;
+  --section-color-blue: linear-gradient(90deg, rgba(95, 152, 240, 0.70) 4.69%, rgba(46, 84, 235, 0.70) 83.33%), #2E54EB;
+
+}

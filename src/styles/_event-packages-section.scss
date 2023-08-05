@@ -1,0 +1,48 @@
+.event-packages-section__heading {
+  color: var(--text-white);
+  font: var(--font-heading-secondary);
+  text-transform: capitalize;
+}
+
+
+.event-packages-section__card {
+
+  &.card-lounge {
+    background: url("./assets/event-pacages/1.jpg") no-repeat;
+    background-size: contain;
+  }
+
+  &.card-mailiroom {
+    background: url("./assets/event-pacages/2.jpg") no-repeat;
+    background-size: contain;
+  }
+
+  &.card-museum {
+    background: url("./assets/event-pacages/3.jpg") no-repeat;
+    background-size: contain;
+  }
+
+
+
+}
+
+.event-packages-section__card {
+  .card-title {
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 50.4px */
+    letter-spacing: 0.42px;
+    text-transform: capitalize;
+    color: var(--text-white);
+  }
+
+
+  .card-content {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--text-white);
+  }
+}

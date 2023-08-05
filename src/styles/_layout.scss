@@ -1,0 +1,42 @@
+
+
+body {
+  font-family: var(--font-body-name);
+  background-color: var(--section-color-dark);
+}
+
+
+.layout {
+  padding: 0 80px;
+
+  //@include breakpoint(tablet) {
+  //}
+  //
+  //@include breakpoint(desktop) {
+  //  padding: 0 80px;
+  //}
+}
+
+.page-header {
+  font: var(--font-heading);
+
+  &.black {
+    color: var(--text-black);
+  }
+}
+
+.page-section {
+
+  &.page-section_dark {
+    background: var(--section-color-dark);
+  }
+
+  &.page-section_light {
+    background: var(--section-color-light);
+  }
+
+  &.page-section_blue {
+    background: var(--section-color-blue);
+  }
+
+  }

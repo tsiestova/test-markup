@@ -1,0 +1,34 @@
+
+
+.input-wrap {
+
+
+  &.input-outline {
+    border: none;
+    border-bottom: 1px solid #FFF;
+  }
+
+
+}
+
+.input {
+  border: 1px solid #FFF;
+  border-radius: 2px;
+  background: transparent;
+
+  &::-webkit-input-placeholder {
+    color: #FFF;
+  }
+
+  &::-moz-placeholder {
+    color: #FFF;
+  }
+
+  &:-ms-input-placeholder {
+    color: #FFF;
+  }
+
+  &:-moz-placeholder {
+    color: #FFF;
+  }
+}

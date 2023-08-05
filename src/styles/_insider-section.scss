@@ -1,0 +1,35 @@
+
+.insider-section {
+  padding: 140px 0;
+
+  .layout {
+    max-width: 1680px;
+    margin: auto;
+  }
+
+
+}
+
+.insider-section__heading {
+  color: var(--text-white);
+  font: var(--font-heading-secondary);
+  text-transform: capitalize;
+  margin-bottom: 33px;
+}
+
+.insider-section__content{
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.26px;
+  color: var(--text-white);
+  margin-bottom: 89px;
+}
+
+.insider-section__form {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+

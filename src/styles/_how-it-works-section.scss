@@ -1,0 +1,39 @@
+.how-it-works-section__heading {
+  color: var(--text-black);
+  font: var(--font-heading-secondary);
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.how-it-works-section__step-item {
+  padding: 136px 48px 48px;
+  color: var(--text-white);
+  background: #2E54EB;
+}
+
+.step-item__title {
+  font: var(--font-heading-name);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+}
+
+.step-item__body {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+.step-item__link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  text-transform: uppercase;
+  color: var(--text-white);
+  text-decoration: none;
+}
