@@ -7,14 +7,11 @@ body {
 
 
 .layout {
-  padding: 0 80px;
+  padding: 0 20px;
 
-  //@include breakpoint(tablet) {
-  //}
-  //
-  //@include breakpoint(desktop) {
-  //  padding: 0 80px;
-  //}
+  @include breakpoint(desktop) {
+    padding: 0 80px;
+  }
 }
 
 .page-header {

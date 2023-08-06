@@ -52,6 +52,28 @@
                         <button type="button" class="btn btn-light">Browse NYC</button>
                         <button type="button" class="btn btn-light">Browse LA</button>
                     </div>
+                    <div class="initial-section__bottom-container">
+                        <div>
+                            <button type="button" class="btn-play">
+                                <i class="icon icon-play-arrow-outline-rounded"></i>
+                                Play Video
+                            </button>
+                        </div>
+                        <div>
+                            <button type="button" class="initial__btn-arrow">
+                                <div>Explore more</div>
+                                <i class="icon icon-back-rounded"></i>
+                            </button>
+                        </div>
+                        <div>
+                            <ul class="initial-section__pagination">
+                                <li class="initial-section__pagination-item active"></li>
+                                <li class="initial-section__pagination-item"></li>
+                                <li class="initial-section__pagination-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="initial-section__gallery-container">
                     <h3 class="initial-section__gallery-container__heading">Stunning event venues</h3>
@@ -228,10 +250,14 @@
         <!-- BLACE Insider -->
         <section class="page-section page-section_blue insider-section">
             <div class="layout">
-                <h3 class="insider-section__heading">BLACE Insider</h3>
-                <p class="insider-section__content">Get the BLACE Insider scoop on the latest venues, trends, and
-                    behind-the-scenes in the events industry, all inside our exclusive newsletter.
-                </p>
+                <div class="insider-section__wrap">
+                    <h3 class="insider-section__heading">BLACE Insider</h3>
+                    <p class="insider-section__content">Get the BLACE Insider scoop on the latest venues, trends, and
+                        behind-the-scenes in the events industry, all inside our exclusive newsletter.
+                    </p>
+                </div>
+            </div>
+            <div class="insider-section__form-wrap">
                 <form action="#" method="post" class="insider-section__form">
                     <div class="input-wrap input-outline">
                         <input class="input" type="text" placeholder="Name">
@@ -257,7 +283,10 @@
                                 event spaces.
                             </div>
                         </div>
-                        <a href="#" class="step-item__link">Browse Venues</a>
+                        <button type="button" class="step-item__link">
+                            Browse Venues
+                            <i class="icon-arrow-right"></i>
+                        </button>
                     </li>
                     <li class="how-it-works-section__step-item">
                         <div class="how-it-works-section__inner">
@@ -266,7 +295,10 @@
                                 décor, photo, video and staffing – you name it, our vendors will make your event memorable.
                             </div>
                         </div>
-                        <a href="#" class="step-item__link">Browse Vendors</a>
+                        <button type="button" class="step-item__link">
+                            Browse Vendors
+                            <i class="icon-arrow-right"></i>
+                        </button>
                     </li>
                     <li class="how-it-works-section__step-item">
                         <div class="how-it-works-section__inner">
@@ -277,7 +309,10 @@
                                 venue + vendors and make secure payments all in one place. 
                             </div>
                         </div>
-                        <a href="#" class="step-item__link">Book Now</a>s
+                        <button type="button" class="step-item__link">
+                            Book Now
+                            <i class="icon-arrow-right"></i>
+                        </button>
                     </li>
                 </ol>
             </div>
@@ -295,84 +330,93 @@
                 </div>
                 <ul class="expert-vendors-section__cards-list">
                     <li class="expert-vendors-section__card-item">
-                        <figure class="expert-vendors-section__pic">
-                            <img src="./assets/expert-vendors/1.jpg" alt="">
-                        </figure>
-                        <div class="expert-vendors-section__inner">
-                            <div class="expert-vendors-section__inner__box">
-                                <div class="card-item__currency">
-                                    <span class="currency__item active">$</span>
-                                    <span class="currency__item active">$</span>
-                                    <span class="currency__item active">$</span>
-                                    <span class="currency__item">$</span>
+                        <a href="#">
+                            <figure class="expert-vendors-section__pic">
+                                <img src="./assets/expert-vendors/1.jpg" alt="">
+                            </figure>
+                            <div class="expert-vendors-section__inner">
+                                <div class="expert-vendors-section__inner__box">
+                                    <div class="card-item__currency">
+                                        <span class="currency__item active">$</span>
+                                        <span class="currency__item active">$</span>
+                                        <span class="currency__item active">$</span>
+                                        <span class="currency__item">$</span>
+                                    </div>
+                                    <div class="card-item__category">Catering</div>
                                 </div>
-                                <div class="card-item__category">Catering</div>
+                                <div class="card-item__title">Abigail Kirsch</div>
+                                <div class="card-item__content">As NYC’s market leader in catering and events, Abigail Kirsch
+                                    takes great pride in driving culinary trends.
+                                </div>
                             </div>
-                            <div class="card-item__title">Abigail Kirsch</div>
-                            <div class="card-item__content">As NYC’s market leader in catering and events, Abigail Kirsch
-                                takes great pride in driving culinary trends.
-                            </div>
-                        </div>
+                        </a>
                     </li>
                     <li class="expert-vendors-section__card-item">
-                        <figure class="expert-vendors-section__pic">
-                            <img src="./assets/expert-vendors/2.jpg" alt="">
-                        </figure>
-                        <div class="expert-vendors-section__inner">
-                            <div class="expert-vendors-section__inner__box">
-                                <div class="card-item__currency">
-                                    <span class="currency__item active">$</span>
-                                    <span class="currency__item">$</span>
-                                    <span class="currency__item">$</span>
-                                    <span class="currency__item">$</span>
+                        <a href="#">
+                            <figure class="expert-vendors-section__pic">
+                                <img src="./assets/expert-vendors/2.jpg" alt="">
+                            </figure>
+                            <div class="expert-vendors-section__inner">
+                                <div class="expert-vendors-section__inner__box">
+                                    <div class="card-item__currency">
+                                        <span class="currency__item active">$</span>
+                                        <span class="currency__item">$</span>
+                                        <span class="currency__item">$</span>
+                                        <span class="currency__item">$</span>
+                                    </div>
+                                    <div class="card-item__category">Entertainment</div>
                                 </div>
-                                <div class="card-item__category">Entertainment</div>
+                                <div class="card-item__title">Acute Inflections</div>
+                                <div class="card-item__content">A velvety mix of Erykah Badu & Billie Holiday paired with the
+                                    cool grooves of her 007 on bass
+                                </div>
                             </div>
-                            <div class="card-item__title">Acute Inflections</div>
-                            <div class="card-item__content">A velvety mix of Erykah Badu & Billie Holiday paired with the
-                                cool grooves of her 007 on bass
-                            </div>
-                        </div>
+                        </a>
                     </li>
                     <li class="expert-vendors-section__card-item">
-                        <figure class="expert-vendors-section__pic">
-                            <img src="./assets/expert-vendors/3.jpg" alt="">
-                        </figure>
-                        <div class="expert-vendors-section__inner">
-                            <div class="expert-vendors-section__inner__box">
-                                <div class="card-item__currency">
-                                    <span class="currency__item active">$</span>
-                                    <span class="currency__item active">$</span>
-                                    <span class="currency__item active">$</span>
-                                    <span class="currency__item">$</span>
+                        <a href="#">
+                            <figure class="expert-vendors-section__pic">
+                                <img src="./assets/expert-vendors/3.jpg" alt="">
+                            </figure>
+                            <div class="expert-vendors-section__inner">
+                                <div class="expert-vendors-section__inner__box">
+                                    <div class="card-item__currency">
+                                        <span class="currency__item active">$</span>
+                                        <span class="currency__item active">$</span>
+                                        <span class="currency__item active">$</span>
+                                        <span class="currency__item">$</span>
+                                    </div>
+                                    <div class="card-item__category">Floral & Decor</div>
                                 </div>
-                                <div class="card-item__category">Floral & Decor</div>
+                                <div class="card-item__title">AbigailBig Apple Florist</div>
+                                <div class="card-item__content">ABig Apple Florist has been New York City’s premier florist
+                                    since 1991. Our studio is located directly in the heart of Midtown Manhattan.
+                                </div>
                             </div>
-                            <div class="card-item__title">AbigailBig Apple Florist</div>
-                            <div class="card-item__content">ABig Apple Florist has been New York City’s premier florist
-                                since 1991. Our studio is located directly in the heart of Midtown Manhattan.
-                            </div>
-                        </div>
+                        </a>
                     </li>
                     <li class="expert-vendors-section__card-item">
-                        <figure class="expert-vendors-section__pic">
-                            <img src="./assets/expert-vendors/1.jpg" alt="">
-                        </figure>
-                        <div class="expert-vendors-section__inner">
-                            <div class="expert-vendors-section__inner__box">
-                                <div class="card-item__currency">
-                                    <span class="currency__item active">$</span>
-                                    <span class="currency__item active">$</span>
-                                    <span class="currency__item active">$</span>
-                                    <span class="currency__item">$</span>
+                        <a href="#">
+                            <figure class="expert-vendors-section__pic">
+                                <img src="./assets/expert-vendors/1.jpg" alt="">
+                            </figure>
+                            <div class="expert-vendors-section__inner">
+                                <div class="expert-vendors-section__inner__box">
+                                    <div class="card-item__currency">
+                                        <span class="currency__item active">$</span>
+                                        <span class="currency__item active">$</span>
+                                        <span class="currency__item active">$</span>
+                                        <span class="currency__item">$</span>
+                                    </div>
+                                    <div class="card-item__category">Catering</div>
                                 </div>
-                                <div class="card-item__category">Catering</div>
+                                <div class="card-item__title">Bartleby & Sage</div>
+                                <div class="card-item__content">Bartleby & Sage is a fine catering and event planning company
+                                    based in Brooklyn, New York.
+                                </div>
                             </div>
-                            <div class="card-item__title">Bartleby & Sage</div>
-                            <div class="card-item__content">Bartleby & Sage is a fine catering and event planning company
-                                based in Brooklyn, New York.
-                            </div>
-                        </div>
+                        </a>
+
                     </li>
                 </ul>
             </div>
@@ -586,7 +630,7 @@
         </div>
             <div class="footer__bottom-container">
                 <div class="layout">
-                    <button type="button" class="footer__bottom-container__link"></button>
+                    <button type="button" class="footer__bottom-container__link btn-arrow btn-arrow-top"></button>
                 </div>
             </div>
 

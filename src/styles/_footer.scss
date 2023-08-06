@@ -105,7 +105,8 @@
   border-top: 1px solid #8F8F95;
 }
 
-.footer__bottom-container__link {
+
+.btn-arrow {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -114,11 +115,17 @@
   text-transform: capitalize;
   color: var(--text-white);
   position: relative;
+  background: none;
 
   &:before {
     font-size: 18px;
     color: var(--text-white);
     @extend .icon;
+  }
+}
+
+.footer__bottom-container__link {
+  &:before {
     @extend .icon-arrow-up;
   }
 }

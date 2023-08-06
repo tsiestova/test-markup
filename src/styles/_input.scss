@@ -22,23 +22,29 @@
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.48px;
-  padding: 0 24px;
+  padding: 0 10px;
   width: 100%;
+  outline: none;
+  color: var(--text-white);
   height: 100%;
 
   &::-webkit-input-placeholder {
     color: #FFF;
+    font-family: var(--font-body-name);
   }
 
   &::-moz-placeholder {
     color: #FFF;
+    font-family: var(--font-body-name);
   }
 
   &:-ms-input-placeholder {
     color: #FFF;
+    font-family: var(--font-body-name);
   }
 
   &:-moz-placeholder {
     color: #FFF;
+    font-family: var(--font-body-name);
   }
 }

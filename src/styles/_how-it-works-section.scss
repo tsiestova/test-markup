@@ -76,4 +76,12 @@
   text-transform: uppercase;
   color: var(--text-white);
   text-decoration: none;
+  background: none;
+  position: relative;
+  align-self: flex-start;
+
+  .icon {
+    color: var(--text-white);
+    font-size: 14px;
+  }
 }

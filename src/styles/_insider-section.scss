@@ -6,8 +6,11 @@
     max-width: 1680px;
     margin: auto;
   }
+}
 
-
+.insider-section__wrap {
+  padding-left: 112px;
+  max-width: 1200px;
 }
 
 .insider-section__heading {
@@ -24,17 +27,26 @@
   line-height: normal;
   letter-spacing: 0.26px;
   color: var(--text-white);
-  margin-bottom: 89px;
+  margin-bottom: 76px;
 }
 
 .insider-section__form {
   display: flex;
-  align-self: center;
+  align-items: center;
   justify-content: space-between;
   gap: 60px;
 
   .btn {
-    flex-shrink: 0;
+    color: var(--text-blue);
+    background: #fff;
+    width: 100%;
+    max-width: 260px;
+    width: 100%;
   }
+
+}
+
+.insider-section__form-wrap {
+  padding: 0 50px 0 192px;
 }
 
