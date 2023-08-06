@@ -31,5 +31,10 @@
   display: flex;
   align-self: center;
   justify-content: space-between;
+  gap: 60px;
+
+  .btn {
+    flex-shrink: 0;
+  }
 }
 

@@ -19,30 +19,6 @@
 </head>
 <body>
 <div class="page__container">
-    <header class="header">
-        <div class="layout">
-            <figure class="header-logo">
-                <a href="#"><img src="./assets/logo.svg" alt=""></a>
-            </figure>
-
-            <nav class="nav-bar header_nav-bar">                                 <!-- Any element can be used here -->
-                <ul>
-                    <li class="header__nav-item"><a href="#">Venues</a></li>
-                    <li class="header__nav-item"><a href="#">Vendors</a></li>
-                    <li class="header__nav-item"><a href="#">Blog</a></li>
-                    <li class="header__nav-item"><a href="#">About</a></li>
-                    <li class="header__nav-item"><a href="#">Contact</a></li>
-                    <li class="header__nav-item"><a href="#">Log in</a></li>
-                </ul>
-            </nav>
-
-            <div class="header__btn-wrap">
-                <button type="button" class="btn btn-primary">Book your event</button>
-                <button type="button" class="btn btn-outline">Become a partner</button>
-            </div>
-        </div>
-    </header>
-
     <main class="main-layout">
         <!-- initial section -->
         <section class="page-section page-section_dark initial-section">
@@ -171,7 +147,7 @@
                     </li>
                     <li class="spotlight-section__gallery-item">
                         <a  href="#">
-                            <img class="gallery-item__pic" src="./assets/spotlight/2.jpg" alt="">
+                            <img class="gallery-item__pic" src="./assets/spotlight/2.png" alt="">
                             <div class="gallery-item__text-wrap">
                                 <div class="gallery-item__category">LA Venue</div>
                                 <div class="gallery-item__content">The Grant - A Los Angeles' filmakers dream in West
@@ -214,7 +190,7 @@
                             <div class="gallery-item__text-wrap">
                                 <div class="gallery-item__category">LA vendor</div>
                                 <div class="gallery-item__content">Annie Campbell -Signature warmth and unparalleled
-                                     attention to details.
+                                    attention to details.
                                 </div>
                                 <div class="open-link">discover more</div>
                             </div>
@@ -250,31 +226,37 @@
         <section class="page-section page-section_light how-it-works-section">
             <div class="layout">
                 <h3 class="how-it-works-section__heading">How it Works</h3>
-                <ul class="how-it-works-section__steps-list">
+                <ol class="how-it-works-section__steps-list">
                     <li class="how-it-works-section__step-item">
-                        <div class="step-item__title">Find a Venue</div>
-                        <div class="step-item__body">Our portfolio boasts NYC & LA's premier and never before seen
-                            event spaces.
+                        <div class="how-it-works-section__inner">
+                            <div class="step-item__title">Find a Venue</div>
+                            <div class="step-item__body">Our portfolio boasts NYC & LA's premier and never before seen
+                                event spaces.
+                            </div>
                         </div>
                         <a href="#" class="step-item__link">Browse Venues</a>
                     </li>
                     <li class="how-it-works-section__step-item">
-                        <div class="step-item__title">Find Vendors</div>
-                        <div class="step-item__body">Our trusted vendors range from caterers, AV & lighting, floral,
-                            décor, photo, video and staffing – you name it, our vendors will make your event memorable.
+                        <div class="how-it-works-section__inner">
+                            <div class="step-item__title">Find Vendors</div>
+                            <div class="step-item__body">Our trusted vendors range from caterers, AV & lighting, floral,
+                                décor, photo, video and staffing – you name it, our vendors will make your event memorable.
+                            </div>
                         </div>
                         <a href="#" class="step-item__link">Browse Vendors</a>
                     </li>
                     <li class="how-it-works-section__step-item">
-                        <div class="step-item__title">Book Your
-                            Dream Event
+                        <div class="how-it-works-section__inner">
+                            <div class="step-item__title">Book Your
+                                Dream Event
+                            </div>
+                            <div class="step-item__body">Our booking tool makes it easy to request proposals, book your
+                                venue + vendors and make secure payments all in one place. 
+                            </div>
                         </div>
-                        <div class="step-item__body">Our booking tool makes it easy to request proposals, book your
-                            venue + vendors and make secure payments all in one place. 
-                        </div>
-                        <a href="#" class="step-item__link">Book Now</a>
+                        <a href="#" class="step-item__link">Book Now</a>s
                     </li>
-                </ul>
+                </ol>
             </div>
         </section>
         <!-- How it Works -->
@@ -283,42 +265,90 @@
         <section class="page-section page-section_dark expert-vendors-section">
             <div class="layout">
                 <h2 class="expert-vendors-section__heading">Expert Vendors</h2>
-                <div class="expert-vendors-section__content">Search BLACE's Trusted Vendor Network</div>
+                <div class="expert-vendors-section__subheading">Search BLACE's Trusted Vendor Network</div>
                 <div class="header__btn-wrap">
-                    <button type="button" class="btn btn-primary">Book your event</button>
-                    <button type="button" class="btn btn-outline">Become a partner</button>
+                    <button type="button" class="btn btn-light">Browse NYC Vendors</button>
+                    <button type="button" class="btn btn-light">Browse LA Vendors</button>
                 </div>
                 <ul class="expert-vendors-section__cards-list">
                     <li class="expert-vendors-section__card-item">
-                        <div class="card-item__currency"></div>
-                        <div class="card-item__category">Catering</div>
-                        <div class="card-item__title">Abigail Kirsch</div>
-                        <div class="card-item__content">As NYC’s market leader in catering and events, Abigail Kirsch
-                            takes great pride in driving culinary trends.
+                        <figure class="expert-vendors-section__pic">
+                            <img src="./assets/expert-vendors/1.jpg" alt="">
+                        </figure>
+                        <div class="expert-vendors-section__inner">
+                            <div class="expert-vendors-section__inner__box">
+                                <div class="card-item__currency">
+                                    <span class="currency__item active">$</span>
+                                    <span class="currency__item active">$</span>
+                                    <span class="currency__item active">$</span>
+                                    <span class="currency__item">$</span>
+                                </div>
+                                <div class="card-item__category">Catering</div>
+                            </div>
+                            <div class="card-item__title">Abigail Kirsch</div>
+                            <div class="card-item__content">As NYC’s market leader in catering and events, Abigail Kirsch
+                                takes great pride in driving culinary trends.
+                            </div>
                         </div>
                     </li>
                     <li class="expert-vendors-section__card-item">
-                        <div class="card-item__currency"></div>
-                        <div class="card-item__category">Entertainment</div>
-                        <div class="card-item__title">Acute Inflections</div>
-                        <div class="card-item__content">A velvety mix of Erykah Badu & Billie Holiday paired with the
-                            cool grooves of her 007 on bass
+                        <figure class="expert-vendors-section__pic">
+                            <img src="./assets/expert-vendors/2.jpg" alt="">
+                        </figure>
+                        <div class="expert-vendors-section__inner">
+                            <div class="expert-vendors-section__inner__box">
+                                <div class="card-item__currency">
+                                    <span class="currency__item active">$</span>
+                                    <span class="currency__item">$</span>
+                                    <span class="currency__item">$</span>
+                                    <span class="currency__item">$</span>
+                                </div>
+                                <div class="card-item__category">Entertainment</div>
+                            </div>
+                            <div class="card-item__title">Acute Inflections</div>
+                            <div class="card-item__content">A velvety mix of Erykah Badu & Billie Holiday paired with the
+                                cool grooves of her 007 on bass
+                            </div>
                         </div>
                     </li>
                     <li class="expert-vendors-section__card-item">
-                        <div class="card-item__currency"></div>
-                        <div class="card-item__category">Floral & Decor</div>
-                        <div class="card-item__title">AbigailBig Apple Florist</div>
-                        <div class="card-item__content">ABig Apple Florist has been New York City’s premier florist
-                            since 1991. Our studio is located directly in the heart of Midtown Manhattan.
+                        <figure class="expert-vendors-section__pic">
+                            <img src="./assets/expert-vendors/3.jpg" alt="">
+                        </figure>
+                        <div class="expert-vendors-section__inner">
+                            <div class="expert-vendors-section__inner__box">
+                                <div class="card-item__currency">
+                                    <span class="currency__item active">$</span>
+                                    <span class="currency__item active">$</span>
+                                    <span class="currency__item active">$</span>
+                                    <span class="currency__item">$</span>
+                                </div>
+                                <div class="card-item__category">Floral & Decor</div>
+                            </div>
+                            <div class="card-item__title">AbigailBig Apple Florist</div>
+                            <div class="card-item__content">ABig Apple Florist has been New York City’s premier florist
+                                since 1991. Our studio is located directly in the heart of Midtown Manhattan.
+                            </div>
                         </div>
                     </li>
                     <li class="expert-vendors-section__card-item">
-                        <div class="card-item__currency"></div>
-                        <div class="card-item__category">Catering</div>
-                        <div class="card-item__title">Bartleby & Sage</div>
-                        <div class="card-item__content">Bartleby & Sage is a fine catering and event planning company
-                            based in Brooklyn, New York.
+                        <figure class="expert-vendors-section__pic">
+                            <img src="./assets/expert-vendors/1.jpg" alt="">
+                        </figure>
+                        <div class="expert-vendors-section__inner">
+                            <div class="expert-vendors-section__inner__box">
+                                <div class="card-item__currency">
+                                    <span class="currency__item active">$</span>
+                                    <span class="currency__item active">$</span>
+                                    <span class="currency__item active">$</span>
+                                    <span class="currency__item">$</span>
+                                </div>
+                                <div class="card-item__category">Catering</div>
+                            </div>
+                            <div class="card-item__title">Bartleby & Sage</div>
+                            <div class="card-item__content">Bartleby & Sage is a fine catering and event planning company
+                                based in Brooklyn, New York.
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -329,32 +359,46 @@
         <!-- Stay in the Know -->
         <section class="page-section page-section_light stay-in-the-know-section">
             <div class="layout">
-                <h2 class="stay-in-the-know-section__heading">Stay in the Know</h2>
-                <div class="stay-in-the-know-section__content">Looking for premium blank spaces for a large production?
-                    Or maybe you need the perfect corporate meeting spot? Consider the BLACE Blog your resource for all
-                    things events!
+                <div class="stay-in-the-know-section__text-container">
+                    <div class="stay-in-the-know-section__text-wrap">
+                        <h2 class="stay-in-the-know-section__heading">Stay in the Know</h2>
+                        <div class="stay-in-the-know-section__content">Looking for premium blank spaces for a large production?
+                            Or maybe you need the perfect corporate meeting spot? Consider the BLACE Blog your resource for all
+                            things events!
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-dark">Read More</button>
                 </div>
-
-                <ul>
-                    <li>
-                        <div>EVENT PLANNING</div>
-                        <div>Top 18 NYC Caterers to Book for Your Next Event</div>
+                <ul class="stay-in-the-know-section__cards__list">
+                    <li class="stay-in-the-know-section__card__item">
+                        <div class="card-category">EVENT PLANNING</div>
+                        <div class="card-title">Top 18 NYC Caterers to Book for Your Next Event</div>
+                        <figure class="card-pic">
+                            <img src="./assets/stayInKnow/1.jpg" alt="">
+                        </figure>
                     </li>
-                    <li>
-                        <div>EVENT PLANNING</div>
-                        <div>How To Find Great Event Vendors
-                            In New York City
-                        </div>
+                    <li class="stay-in-the-know-section__card__item">
+                        <div class="card-category">EVENT PLANNING</div>
+                        <div class="card-title">How To Find Great Event Vendors
+                            In New York City</div>
+                        <figure class="card-pic">
+                            <img src="./assets/stayInKnow/2.jpg" alt="">
+                         </figure>
                     </li>
-                    <li>
-                        <div>EVENT PLANNING</div>
-                        <div>Event Space Spotlight: 180 Maiden Lane</div>
+                    <li class="stay-in-the-know-section__card__item">
+                        <div class="card-category">EVENT PLANNING</div>
+                        <div class="card-title">Brooklyn Venues that are Best
+                            for Holiday Parties</div>
+                        <figure class="card-pic">
+                            <img src="./assets/stayInKnow/4.jpg" alt="">
+                        </figure>
                     </li>
-                    <li>
-                        <div>INSIGHTS</div>
-                        <div>Brooklyn Venues that are Best
-                            for Holiday Parties
-                        </div>
+                    <li class="stay-in-the-know-section__card__item">
+                        <div class="card-category">EVENT PLANNING</div>
+                        <div class="card-title">Event Space Spotlight: 180 Maiden Lane</div>
+                        <figure class="card-pic">
+                            <img src="./assets/stayInKnow/3.jpg" alt="">
+                        </figure>
                     </li>
                 </ul>
             </div>
@@ -364,11 +408,19 @@
         <!-- Become a BLACE Partner -->
         <section class="page-section page-section_blue become-blace-section">
             <div class="layout">
-                <h2>Become a BLACE Partner</h2>
-                <div class="header__btn-wrap">
-                    <button type="button" class="btn btn-primary">Book your event</button>
-                    <button type="button" class="btn btn-outline">Become a partner</button>
+                <div class="become-blace-section__inner">
+                    <div class="become-blace-section__text-wrap">
+                        <h2 class="become-blace-section__heading">Become a BLACE Partner</h2>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn btn-light">Become a Vendor</button>
+                            <button type="button" class="btn btn-light">List your venue</button>
+                        </div>
+                    </div>
+                    <figure class="become-blace-section__pic">
+                        <img src="./assets/blace.jpg" alt="">
+                    </figure>
                 </div>
+
             </div>
         </section>
         <!--/Become a BLACE Partner -->
@@ -377,7 +429,7 @@
         <section class="page-section page-section_dark event-packages-section">
             <div class="layout">
                 <h2 class="event-packages-section__heading">Event Packages</h2>
-                <ul class="event-packages-section">
+                <ul class="event-packages-section__cards-list">
                     <li class="event-packages-section__card card-lounge">
                         <h3 class="card-title">THE LOUNGE
                             AT CHELSEA INDUSTRIAL</h3>
@@ -435,6 +487,30 @@
         </section>
         <!--/hosting in cities -->
     </main>
+
+    <header class="header">
+        <div class="layout">
+            <figure class="header-logo">
+                <a href="#"><img src="./assets/logo.svg" alt=""></a>
+            </figure>
+
+            <nav class="nav-bar header_nav-bar">                                 <!-- Any element can be used here -->
+                <ul>
+                    <li class="header__nav-item"><a href="#">Venues</a></li>
+                    <li class="header__nav-item"><a href="#">Vendors</a></li>
+                    <li class="header__nav-item"><a href="#">Blog</a></li>
+                    <li class="header__nav-item"><a href="#">About</a></li>
+                    <li class="header__nav-item"><a href="#">Contact</a></li>
+                    <li class="header__nav-item"><a href="#">Log in</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__btn-wrap">
+                <button type="button" class="btn btn-primary">Book your event</button>
+                <button type="button" class="btn btn-outline">Become a partner</button>
+            </div>
+        </div>
+    </header>
 
     <footer class="footer">
         <div class="layout">

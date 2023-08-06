@@ -1,11 +1,15 @@
 
 
 .input-wrap {
+  width: 100%;
 
 
   &.input-outline {
-    border: none;
-    border-bottom: 1px solid #FFF;
+
+    input {
+      border: none;
+      border-bottom: 1px solid #FFF;
+    }
   }
 
 
@@ -15,6 +19,13 @@
   border: 1px solid #FFF;
   border-radius: 2px;
   background: transparent;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  padding-bottom: 16px;
+  width: 100%;
 
   &::-webkit-input-placeholder {
     color: #FFF;

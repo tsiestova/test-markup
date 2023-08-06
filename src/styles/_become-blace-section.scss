@@ -1,0 +1,43 @@
+
+
+.become-blace-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  .btn-wrap {
+    display: flex;
+    gap: 24px;
+  }
+
+}
+
+
+.become-blace-section__heading {
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  color: var(--text-black);
+  text-transform: capitalize;
+  font-family: var(--font-heading-name);
+  margin-bottom: 66px;
+}
+
+.become-blace-section__text-wrap {
+  border-radius: 2px;
+  padding: 0 80px;
+  max-width: 1680px;
+  width: 100%;
+
+}
+
+.become-blace-section__pic {
+  width: 100%;
+}
+
+.become-blace-section__inner {
+  display: flex;
+  align-items: center;
+  background: #FFF;
+  justify-content: center;
+}
