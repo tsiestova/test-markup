@@ -1,0 +1,124 @@
+.footer {
+  padding: 60px 0 60px;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 43px;
+}
+
+.footer__contacts {
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+    color: var(--text-white);
+    margin-bottom: 25px;
+    display: flex;
+    gap: 8px;
+  }
+}
+
+.footer-contact-link {
+
+}
+
+.footer-logo {
+  margin-bottom: 64px;
+}
+
+.footer_nav-bar {
+  padding-top: 20px;
+}
+
+.footer__nav-item {
+  margin-bottom: 18px;
+
+  a {
+    color: var(--text-white);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration: none;
+  }
+}
+
+.footer__form__section {
+  background: linear-gradient(90deg, rgba(95, 152, 240, 0.70) 4.69%, rgba(46, 84, 235, 0.70) 83.33%), #2E54EB;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+}
+
+.footer__form__title {
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: var(--text-white);
+}
+
+.footer__form__content {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: var(--text-white);
+}
+
+.footer-contact-item {
+  position: relative;
+
+  &:before {
+    @extend .icon;
+    font-size: 18px;
+    color: #2F54EB;
+  }
+
+  &.footer__location {
+    &:before {
+      @extend .icon-location;
+    }
+  }
+
+  &.footer__email {
+    &:before {
+      @extend .icon-email-outline;
+    }
+  }
+
+  &.footer__phone {
+    &:before {
+      @extend .icon-phone-outline;
+    }
+  }
+}
+
+.footer__bottom-container {
+  border-top: 1px solid #8F8F95;
+}
+
+.footer__bottom-container__link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.56px;
+  text-transform: capitalize;
+  color: var(--text-white);
+  position: relative;
+
+  &:before {
+    font-size: 18px;
+    color: var(--text-white);
+    @extend .icon;
+    @extend .icon-arrow-up;
+  }
+}
