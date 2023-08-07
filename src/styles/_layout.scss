@@ -1,10 +1,13 @@
-
+/**/
 
 body {
   font-family: var(--font-body-name);
   background-color: var(--section-color-dark);
 }
 
+a {
+  cursor: pointer;
+}
 
 .layout {
   padding: 0 20px;
@@ -35,5 +38,4 @@ body {
   &.page-section_blue {
     background: var(--section-color-blue);
   }
-
-  }
+}

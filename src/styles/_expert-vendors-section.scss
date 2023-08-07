@@ -2,23 +2,26 @@
 .expert-vendors-section {
   padding: 120px 0;
 
-  .btn {
-    max-width: 268px;
-    width: 100%;
-  }
+}
 
-  .header__btn-wrap {
-    margin-bottom: 87px;
+.expert-vendors__btn-wrap {
+  margin-bottom: 87px;
+  display: flex;
+  gap: 24px;
+
+  .btn {
+    padding: 0 56px;
   }
 }
 
 .expert-vendors-section__heading {
   color: var(--text-white);
   font: var(--font-heading-secondary);
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+
 }
 
-.expert-vendors-section__subheading{
+.expert-vendors-section__subheading {
   color: var(--text-white);
   font-size: 26px;
   font-style: normal;
@@ -30,7 +33,6 @@
 
 .expert-vendors-section__cards-list {
   display: flex;
-  align-items: center;
   gap: 32px;
 }
 
@@ -41,6 +43,13 @@
 .expert-vendors-section__card-item {
   border-radius: 2px 2px 12px 12px;
   border: 1px solid #FFF;
+  width: 100%;
+
+  a {
+
+    display: block;
+    height: 100%;
+  }
 
   .card-item__currency {
     display: inline-block;
@@ -93,6 +102,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 32px;
 }
 
 .expert-vendors-section__pic {

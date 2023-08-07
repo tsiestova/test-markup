@@ -1,11 +1,6 @@
 
 .insider-section {
   padding: 140px 0;
-
-  .layout {
-    max-width: 1680px;
-    margin: auto;
-  }
 }
 
 .insider-section__wrap {
@@ -20,7 +15,7 @@
   margin-bottom: 33px;
 }
 
-.insider-section__content{
+.insider-section__content {
   font-size: 26px;
   font-style: normal;
   font-weight: 300;
@@ -43,10 +38,10 @@
     max-width: 260px;
     width: 100%;
   }
-
 }
 
 .insider-section__form-wrap {
   padding: 0 50px 0 192px;
+  max-width: 1740px;
 }
 
