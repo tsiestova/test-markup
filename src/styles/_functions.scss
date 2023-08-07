@@ -1,14 +1,14 @@
 @mixin breakpoint($name) {
-  @if $name == tablet {
+  @if $name == medium {
     @media (min-width: 768px) {
       @content;
     }
 
-  } @else if $name == desktop {
+  } @else if $name == large {
     @media (min-width: 1440px) {
       @content;
     }
-  } @else if $name == desktop {
+  } @else if $name == x-large {
     @media (min-width: 1680px) {
       @content;
     }

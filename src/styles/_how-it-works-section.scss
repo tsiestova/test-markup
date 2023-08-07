@@ -1,41 +1,63 @@
 .how-it-works-section {
-  padding: 120px 0;
+  padding: var(--section-padding) 0;
+
+  @include breakpoint(x-large) {
+    padding: 120px 0;
+  }
+
 }
 
 .how-it-works-section__steps-list {
   display: flex;
-  gap: 40px;
+  flex-wrap: wrap;
+  row-gap: var(--gallery-spacing);
+  height: auto;
   counter-reset: section;
+
+  @include breakpoint(x-large) {
+    gap: 40px;
+    flex-wrap: nowrap;
+  }
 }
 
 .how-it-works-section__heading {
   color: var(--text-black);
   font: var(--font-heading-secondary);
   text-align: center;
-  margin-bottom: 82px;
+  margin-bottom: var(--section-padding);
   text-transform: capitalize;
+
+  @include breakpoint(x-large) {
+    margin-bottom: 82px;
+  }
 }
 
 .how-it-works-section__step-item {
   color: var(--text-white);
   background: #2E54EB;
   position: relative;
-  padding: 48px 79px 59px 48px;
+  padding: var(--gallery-spacing);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 48px;
+  gap: var(--gallery-spacing);
+
+  @include breakpoint(x-large) {
+    gap: 48px;
+    padding: 48px 79px 59px 48px;
+  }
+
 
   &:before {
     content: counter(section);
     counter-increment: section;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     background: #FFFFFF;
     border-radius: 100%;
     color: var(--text-blue);
-    font-size: 20px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
@@ -43,6 +65,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include breakpoint(x-large) {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
   }
 }
 
@@ -51,35 +79,51 @@
 }
 
 .step-item__title {
-  font-family: var(--font-heading-name);
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-  letter-spacing: -0.5px;
+  font: var(--font-heading-secondary);
+
+
+  @include breakpoint(x-large) {
+    font-family: var(--font-heading-name);
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+  }
 }
 
 .step-item__body {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 140%;
+
+  font: var(--font-gallery-content);
+
+  @include breakpoint(x-large) {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+  }
+
 }
 
 .step-item__link {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.56px;
-  text-transform: uppercase;
+  font: var(--font-link);
   color: var(--text-white);
   text-decoration: none;
   background: none;
   position: relative;
   align-self: flex-start;
   display: flex;
-  gap: 15px;
+  gap: 5px;
+
+  @include breakpoint(x-large) {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    gap: 15px;
+  }
 
   .icon {
     color: var(--text-white);

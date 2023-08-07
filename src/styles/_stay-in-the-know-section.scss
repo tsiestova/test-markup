@@ -1,17 +1,35 @@
+.stay-in-the-know-section {
+  padding: var(--section-padding) 0;
+
+  @include breakpoint(x-large) {
+    padding: 108px 0;
+  }
+
+}
+
 .stay-in-the-know-section__heading {
   color: var(--text-black);
   font: var(--font-heading-secondary);
   text-transform: capitalize;
-  margin-bottom: 40px;
+  margin-bottom: var(--section-padding);
+
+  @include breakpoint(x-large) {
+    margin-bottom: 40px;
+  }
 }
 
 .stay-in-the-know-section__content {
   color: var(--text-black);
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 140%;
-  letter-spacing: 0.22px;
+  font: var(--font-gallery-content);
+  margin-bottom: 20px;
+
+  @include breakpoint(x-large) {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    letter-spacing: 0.22px;
+  }
 }
 
 .stay-in-the-know-section__text-container {
@@ -19,16 +37,24 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  padding-bottom: 142px;
+
+  flex-direction: column;
+
+  @include breakpoint(x-large) {
+    flex-direction: row;
+    padding-bottom: 142px;
+  }
 }
 
-.stay-in-the-know-section {
-  padding: 108px 0;
-}
+
 
 .stay-in-the-know__btn {
-  align-self: self-end;
+
   margin-bottom: 25px;
+
+  @include breakpoint(x-large) {
+    align-self: self-end;
+  }
 
 
   .btn {
@@ -41,10 +67,18 @@
 }
 
 .stay-in-the-know-section__cards__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 432px;
-  grid-gap: 19px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--gallery-spacing);
+  
+  @include breakpoint(x-large) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 432px;
+    grid-gap: 19px;
+  }
+
 }
 
 .stay-in-the-know-section__card__item {
@@ -81,22 +115,30 @@
   }
 
 .card-category {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 31.992px;
+  font: var(--font-link);
   margin-bottom: 8px;
   color: #89898E;
   margin-top: 16px;
+
+  @include breakpoint(x-large) {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31.992px;
+  }
 }
 
 .card-title {
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 42px;
-  letter-spacing: 0.64px;
   margin-bottom: 22px;
+  font: var(--font-gallery-title);
+
+  @include breakpoint(x-large) {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.64px;
+  }
 }
 
   .card-pic {

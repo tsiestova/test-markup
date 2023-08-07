@@ -3,9 +3,17 @@
 }
 
 .footer__inner {
-  display: grid;
-  grid-template-columns: 33% 24% 1fr;
-  padding-bottom: 43px;
+  display: flex;
+  flex-wrap: wrap;
+
+
+
+  @include breakpoint(x-large) {
+    display: grid;
+    grid-template-columns: 33% 24% 1fr;
+    padding-bottom: 43px;
+  }
+
 }
 
 .footer__contacts {
@@ -13,22 +21,30 @@
 
   a {
     text-decoration: none;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%;
-    letter-spacing: 0.5px;
+    font: var(--font-link);
     color: var(--text-white);
     margin-bottom: 25px;
     display: flex;
     gap: 8px;
+
+    @include breakpoint(x-large) {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      letter-spacing: 0.5px;
+    }
   }
 }
 
 .footer-logo {
   margin-bottom: 62px;
-  width: 252px;
-  height: 44px;
+  width: 191px;
+  height: auto;
+
+  @include breakpoint(x-large) {
+    width: 252px;
+  }
 
   img {
     width: 100%;
@@ -42,11 +58,15 @@
 
   a {
     color: var(--text-white);
-    font-size: 24px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
     text-decoration: none;
+
+    @include breakpoint(x-large) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -56,11 +76,19 @@
   flex-direction: column;
   gap: 16px;
   padding: 32px 32px 17px 32px;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   color: var(--text-white);
+
+  @include breakpoint(x-large) {
+    font-size: 18px;
+  }
+
+  .input-wrap {
+    height: 50px;
+  }
 
   .input {
     padding: 0 24px;
@@ -109,15 +137,27 @@
   border-top: 1px solid #8F8F95;
   padding-top: 56px;
   color: var(--text-white);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0.5px;
+  font: var(--font-link);
+
+  @include breakpoint(x-large) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0.5px;
+
+  }
 }
 
 .footer__bottom-inner {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+
+  @include breakpoint(x-large) {
+    flex-direction: row;
+  }
 
   span {
     margin-right: 16px;
@@ -127,7 +167,7 @@
 
 
 .btn-arrow {
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -159,6 +199,7 @@
   position: relative;
   background: none;
 
+
   .icon {
     font-size: 24px;
     color: var(--text-white);
@@ -169,15 +210,26 @@
   display: flex;
   gap: 26px;
   padding-top: 43px;
+  margin-bottom: 30px;
+  justify-content: center;
+
+  @include breakpoint(x-large) {
+    margin-bottom: 0;
+    justify-content: flex-start;
+  }
 }
 
 
 .social-media__item {
   position: relative;
   @extend .icon;
-  font-size: 26px;
+  font-size: 18px;
   color: var(--text-white);
   cursor: pointer;
+
+  @include breakpoint(x-large) {
+    font-size: 26px;
+  }
 
   &.instagram {
     @extend .icon-instagram;
@@ -197,5 +249,39 @@
 
   &.tiktok {
     @extend .icon-tiktok;
+  }
+}
+
+.footer_nav-bar {
+  margin: 20px 0 20px;
+
+  @include breakpoint(x-large) {
+    margin: 0;
+  }
+
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 45px;
+
+
+    @include breakpoint(x-large) {
+      display: block;
+    }
+  }
+
+}
+
+.footer__bottom-container__link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  @include breakpoint(x-large) {
+    width: auto;
+    display: inline-block;
+    margin-bottom: 0;
   }
 }

@@ -1,35 +1,58 @@
 
 .become-blace-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: var(--section-padding) 0 var(--section-padding) 0;
+
+
+  @include breakpoint(x-large) {
+    padding: 120px 0 120px 0;
+  }
 
 }
 
 .blace-section__btn-container {
   display: flex;
-  gap: 35px;
+  gap: 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  @include breakpoint(x-large) {
+    flex-direction: row;
+    gap: 35px;
+    margin-bottom: 0;
+  }
 
   .btn {
-    padding: 0 57px;
+    @include breakpoint(x-large) {
+      padding: 0 57px;
+    }
   }
 }
 
 .become-blace-section__heading {
-  font-size: 58px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 110%;
+  font: var(--font-heading-secondary);
   color: var(--text-black);
   text-transform: capitalize;
-  font-family: var(--font-heading-name);
-  margin-bottom: 66px;
+  margin-bottom: var(--section-padding);
+
+
+  @include breakpoint(x-large) {
+    margin-bottom: 66px;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+  }
 }
 
 .become-blace-section__text-wrap {
   border-radius: 2px;
-  padding: 0 80px;
-  max-width: 1680px;
+  padding: 20px;
   width: 100%;
+
+  @include breakpoint(x-larg) {
+    padding: 0 80px;
+    max-width: 1680px;
+  }
 }
 
 .become-blace-section__pic {
@@ -48,4 +71,10 @@
   align-items: center;
   background: #FFF;
   justify-content: center;
+  flex-direction: column;
+
+  @include breakpoint(x-large) {
+    flex-direction: row;
+  }
 }
+

@@ -1,35 +1,62 @@
 
 .insider-section {
-  padding: 140px 0;
+
+  padding: var(--section-padding) 20px;
+
+  @include breakpoint(x-large) {
+    padding: 140px 0;
+  }
+
 }
 
 .insider-section__wrap {
-  padding-left: 112px;
-  max-width: 1200px;
-}
+
+  @include breakpoint(x-large) {
+    padding-left: 112px;
+    max-width: 1200px;
+  }
+  }
+
 
 .insider-section__heading {
   color: var(--text-white);
   font: var(--font-heading-secondary);
   text-transform: capitalize;
   margin-bottom: 33px;
+  text-align: center;
+  
+  @include breakpoint(x-large) {
+    text-align: left;
+  }
 }
 
 .insider-section__content {
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  letter-spacing: 0.26px;
   color: var(--text-white);
-  margin-bottom: 76px;
+  margin-bottom: 20px;
+  font: var(--font-subheading);
+
+  @include breakpoint(x-large) {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.26px;
+    margin-bottom: 76px;
+  }
 }
 
 .insider-section__form {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  flex-direction: column;
+  gap: 10px;
+
+  @include breakpoint(x-large) {
+    gap: 60px;
+    flex-direction: row;
+  }
+
 
   .btn {
     color: var(--text-blue);
@@ -41,7 +68,10 @@
 }
 
 .insider-section__form-wrap {
-  padding: 0 50px 0 192px;
-  max-width: 1740px;
+
+  @include breakpoint(x-large) {
+    padding: 0 50px 0 192px;
+    max-width: 1740px;
+  }
 }
 

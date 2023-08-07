@@ -2,8 +2,23 @@
   --font-heading-name: 'Playfair Display', serif;
   --font-body-name: 'Poppins', sans-serif;
 
-  --font-heading-primary: 700 116px / 110% var(--font-heading-name);
-  --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
+  --font-heading-primary: 700 60px / 110% var(--font-heading-name);
+  --font-heading-secondary: 700 40px / 120% var(--font-heading-name);
+  //--font-gallery-title: 600 32px / 42px;
+  //--font-gallery-content: 300 22px / 140%;
+  //--font-subheading: 300 26px / 1 var(--font-body-name);
+
+  --font-gallery-title: 600 20px / 25px var(--font-body-name);
+  --font-gallery-content: 300 16px / 140% var(--font-body-name);
+  --font-subheading: 300 20px / 140% var(--font-body-name);
+  --font-link: 500 12px / 0.56 var(--font-body-name);
+
+  //gallery
+  --gallery-item-height: 450px;
+  --gallery-spacing: 20px;
+
+  //sections
+  --section-padding: 60px;
 
   //text-colors
   --text-black: #20202C;
@@ -17,3 +32,40 @@
   --section-color-blue: linear-gradient(90deg, rgba(95, 152, 240, 0.70) 4.69%, rgba(46, 84, 235, 0.70) 83.33%), #2E54EB;
 
 }
+
+section {
+  h1, h2, h3 {
+    text-align: center;
+  }
+}
+
+@include breakpoint(medium) {
+   :root {
+   --font-heading-primary: 700 116px / 110% var(--font-heading-name);
+   --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
+     --font-link: 500 14x / 0.56 var(--font-body-name);
+ }
+
+  section {
+    h1, h2, h3 {
+      text-align: left;
+    }
+  }
+
+}
+
+@include breakpoint(large) {
+   :root {
+   --font-heading-primary: 700 116px / 110% var(--font-heading-name);
+   --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
+ }
+
+}
+
+@include breakpoint(x-large) {
+ :root {
+   --font-heading-primary: 700 116px / 110% var(--font-heading-name);
+   --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
+ }
+}
+
