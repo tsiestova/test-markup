@@ -177,6 +177,7 @@
   @extend .icon;
   font-size: 26px;
   color: var(--text-white);
+  cursor: pointer;
 
   &.instagram {
     @extend .icon-instagram;
