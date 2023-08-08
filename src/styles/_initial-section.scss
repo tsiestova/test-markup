@@ -225,16 +225,15 @@
   row-gap: var(--gallery-spacing);
   height: auto;
 
-  //@include breakpoint(large) {
-  //  height: 704px;
-  //  column-gap: 20px;
-  //  flex-wrap: nowrap;
-  //  row-gap: 0;
-  //}
+  @include breakpoint(large) {
+    height: 704px;
+    column-gap: 20px;
+    flex-wrap: nowrap;
+    row-gap: 0;
+  }
 
   @include breakpoint(x-large) {
-    column-gap: 164px;
-
+    column-gap: 60px;
   }
 }
 
