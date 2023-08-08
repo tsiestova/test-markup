@@ -12,16 +12,21 @@
   gap: 10px;
   flex-direction: column;
   margin-bottom: var(--gallery-spacing);
+  justify-content: center;
 
-  @include breakpoint(x-large) {
+  @include breakpoint(medium) {
     margin-bottom: 87px;
     gap: 24px;
     flex-direction: row;
   }
 
+  @include breakpoint(large) {
+    justify-content: flex-start;
+  }
 
   .btn {
     padding: 0 20px;
+
     @include breakpoint(x-large) {
       padding: 0 56px;
     }
@@ -40,9 +45,14 @@
 
 .expert-vendors-section__subheading {
   color: var(--text-white);
-
+  text-align: center;
   font: var(--font-subheading);
   margin-bottom: 42px;
+
+  @include breakpoint(large) {
+    text-align: left;
+  }
+
 
   @include breakpoint(x-large) {
     font-size: 26px;
@@ -50,6 +60,7 @@
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.26px;
+
   }
 }
 
@@ -59,8 +70,12 @@
   gap: var(--gallery-spacing);
   //height: auto;
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  @include breakpoint(x-large) {
     gap: 32px;
   }
 }
@@ -129,6 +144,7 @@
 
     color: var(--text-white);
     font: var(--font-gallery-content);
+
     @include breakpoint(x-large) {
       font-size: 18px;
       font-style: normal;

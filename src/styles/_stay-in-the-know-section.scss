@@ -37,13 +37,15 @@
   justify-content: space-between;
   width: 100%;
   align-items: center;
-
   flex-direction: column;
 
-  @include breakpoint(x-large) {
-    flex-direction: row;
-    padding-bottom: 142px;
-  }
+
+@include breakpoint(large) {
+  align-items: flex-start;
+  flex-direction: row;
+  padding-bottom: 142px;
+}
+
 }
 
 
@@ -72,7 +74,7 @@
   justify-content: space-between;
   gap: var(--gallery-spacing);
   
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 432px;

@@ -41,31 +41,43 @@ section {
 
 @include breakpoint(medium) {
    :root {
-   --font-heading-primary: 700 116px / 110% var(--font-heading-name);
-   --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
-     --font-link: 500 14x / 0.56 var(--font-body-name);
+     --font-heading-primary: 700 80px / 110% var(--font-heading-name);
+     --font-heading-secondary: 700 40px / 120% var(--font-heading-name);
+     --font-gallery-title: 600 25px / 25px var(--font-body-name);
+     --font-gallery-content: 300 18px / 140% var(--font-body-name);
+     --font-subheading: 300 25px / 140% var(--font-body-name);
+     --font-link: 500 12px / 0.56 var(--font-body-name);
+     --section-padding: 50px;
+     --gallery-spacing: 30px;
+   }
  }
+
+@include breakpoint(large) {
+  :root {
+    --font-heading-primary: 700 116px / 110% var(--font-heading-name);
+    --font-heading-secondary: 700 60px / 120% var(--font-heading-name);
+    --font-subheading: 300 30px / 140% var(--font-body-name);
+    --section-padding: 60px;
+    --font-gallery-content: 300 20px / 140% var(--font-body-name);
+  }
 
   section {
     h1, h2, h3 {
       text-align: left;
     }
   }
+}
+
+  @include breakpoint(x-large) {
+    :root {
+      --font-heading-primary: 700 116px / 110% var(--font-heading-name);
+      --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
+      --font-link: 500 14x / 0.56 var(--font-body-name);
+    }
+
+
 
 }
 
-@include breakpoint(large) {
-   :root {
-   --font-heading-primary: 700 116px / 110% var(--font-heading-name);
-   --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
- }
 
-}
-
-@include breakpoint(x-large) {
- :root {
-   --font-heading-primary: 700 116px / 110% var(--font-heading-name);
-   --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
- }
-}
 

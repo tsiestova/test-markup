@@ -12,7 +12,7 @@
   color: var(--text-white);
   font: var(--font-heading-secondary);
   text-transform: capitalize;
-  margin-bottom: 23px;
+  margin-bottom: var(--section-padding);
 }
 
 .event-packages-section__card-item {
@@ -23,7 +23,7 @@
   padding: 20px 0 20px;
   flex-direction: column;
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     gap: 150px;
     padding: 60px 0 60px;
     flex-direction: row;

@@ -13,9 +13,7 @@
   border-radius: 2px;
   border: none;
 
-  width: 100%;
-
-  @include breakpoint(x-large) {
+  @include breakpoint(medium) {
     min-width: 209px;
   }
 
@@ -35,6 +33,12 @@
     color: #222222;
     border-radius: 2px;
     border: 2px solid #222;
+  }
+
+  &.btn-blue {
+    background: #FFF;
+    color: #2E54EB;
+    border-radius: 2px;
   }
 
   &.btn-dark {

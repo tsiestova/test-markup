@@ -3,7 +3,7 @@
   padding: var(--section-padding) 0 var(--section-padding) 0;
 
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     padding: 120px 0 120px 0;
   }
 
@@ -15,10 +15,15 @@
   flex-direction: column;
   margin-bottom: 20px;
 
-  @include breakpoint(x-large) {
+  @include breakpoint(medium) {
+    justify-content: center;
     flex-direction: row;
     gap: 35px;
     margin-bottom: 0;
+  }
+
+  @include breakpoint(large) {
+    justify-content: flex-start;
   }
 
   .btn {
@@ -73,7 +78,7 @@
   justify-content: center;
   flex-direction: column;
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     flex-direction: row;
   }
 }

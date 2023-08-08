@@ -52,9 +52,28 @@
   flex-direction: column;
   gap: 10px;
 
+  @include breakpoint(medium) {
+    max-width: 60%;
+    margin: auto;
+
+  }
+
+  @include breakpoint(large) {
+    gap: 30px;
+    flex-direction: row;
+    max-width: 100%;
+  }
+
   @include breakpoint(x-large) {
     gap: 60px;
-    flex-direction: row;
+
+  }
+
+  .btn__wrap {
+
+    @include breakpoint(medium) {
+      flex-shrink: 0;
+    }
   }
 
 
@@ -68,6 +87,11 @@
 }
 
 .insider-section__form-wrap {
+
+
+  @include breakpoint(medium) {
+    padding: 0 50px;
+  }
 
   @include breakpoint(x-large) {
     padding: 0 50px 0 192px;

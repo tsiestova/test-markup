@@ -13,6 +13,10 @@ a {
 .layout {
   padding: 0 20px;
 
+  @include breakpoint(medium) {
+    padding: 0 50px;
+  }
+
   @include breakpoint(x-large) {
     padding: 0 80px;
   }

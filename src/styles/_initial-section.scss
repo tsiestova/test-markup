@@ -2,7 +2,7 @@
   position: relative;
   padding-bottom: var(--section-padding);
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     padding-bottom: 140px;
   }
 
@@ -21,7 +21,7 @@
   height: 900px;
 
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     height: 982px;
   }
 }
@@ -36,7 +36,7 @@
   right: 16px;
   bottom: 0;
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     bottom: 32px;
     flex-direction: row;
   }
@@ -47,7 +47,7 @@
 
     &:first-child {
       order: 2;
-      @include breakpoint(x-large) {
+      @include breakpoint(large) {
         order: 1;
       }
     }
@@ -56,7 +56,7 @@
       justify-content: center;
       order: 3;
       
-      @include breakpoint(x-large) {
+      @include breakpoint(large) {
         order: 2;
       }
     }
@@ -66,7 +66,7 @@
       margin-bottom: 30px;
 
       order: 1;
-      @include breakpoint(x-large) {
+      @include breakpoint(large) {
         order: 3;
         justify-content: flex-end;
         margin-bottom: 0;
@@ -183,7 +183,7 @@
 .initial-section__gallery-container {
   padding-top: var(--section-padding);
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     padding-top: 153px;
   }
 }
@@ -210,7 +210,7 @@
   font: var(--font-subheading);
   text-align: center;
   
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     text-align: left;
     font-size: 26px;
     font-weight: 300;
@@ -225,12 +225,17 @@
   flex-wrap: wrap;
   row-gap: var(--gallery-spacing);
   height: auto;
+  
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     height: 704px;
-    column-gap: 60px;
+    column-gap: 20px;
     flex-wrap: nowrap;
     row-gap: 0;
+  }
+
+  @include breakpoint(large) {
+    column-gap: 60px;
   }
 }
 
@@ -239,9 +244,41 @@
   //height: 100% ;
   display: block;
   /*min-height: 340px;*/
+  position: relative;
+  
+  &:before {
+    @include breakpoint(large) {
+        content: '';
+    }
+  }
 
+  &:after {
+    @include breakpoint(large) {
+      content: '';
+    }
+  }
 
+  &:first-child {
+    @include animateCard(#FC86F4, #4E0F4E);
+  }
 
+  &:nth-child(2) {
+    @include animateCard(#6AA3CE, rgba(16, 49, 66, 0.87));
+  }
+
+  &:nth-child(3) {
+    @include animateCard(#F5E9C7, #867772);
+  }
+
+  &:hover {
+    &:before {
+      transform: rotate(5deg);
+    }
+
+    &:after {
+      transform: rotate(-5deg);
+    }
+  }
 
   .gallery-item__pic {
     position: absolute;
@@ -249,6 +286,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
   }
 
   .gallery-item__text-wrap {
@@ -258,7 +296,7 @@
     backdrop-filter: blur(10px);
     padding: 10px;
 
-    @include breakpoint(x-large) {
+    @include breakpoint(large) {
       min-height: 315px;
       padding: 35px 24px 17px;
     }
@@ -275,7 +313,7 @@
     height: 100%;
 
 
-    @include breakpoint(x-large) {
+    @include breakpoint(large) {
       padding: 0 25px 25px 25px;
       height: 100%;
     }
@@ -294,7 +332,7 @@
     font: var(--font-gallery-title);
 
 
-    @include breakpoint(x-large) {
+    @include breakpoint(large) {
       font-size: 32px;
       font-style: normal;
       font-weight: 600;
@@ -308,7 +346,7 @@
     text-decoration: none;
     font: var(--font-gallery-content);
 
-    @include breakpoint(x-large) {
+    @include breakpoint(large) {
       font-size: 22px;
       font-style: normal;
       font-weight: 300;
@@ -323,7 +361,7 @@
 .initial-section__company-container {
   padding-top: var(--section-padding);
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     padding-top: 138px;
   }
 }
@@ -340,6 +378,13 @@
   justify-content: space-between;
   row-gap: 39px;
 
+  @include breakpoint(medium) {
+    column-gap: 35px;
+  }
+
+  @include breakpoint(large) {
+    column-gap: 90px;
+  }
 
   @include breakpoint(x-large) {
     column-gap: 164px;
@@ -358,7 +403,7 @@
   gap: 4px;
   margin: 0 0 15px;
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     margin: 0 0 28px;
   }
 
@@ -372,7 +417,11 @@
 .initial-section__company-item {
   width: 50px;
 
-  @include breakpoint(x-large) {
+  @include breakpoint(medium) {
+    width: 80px;
+  }
+
+  @include breakpoint(large) {
     width: 110px;
   }
 }

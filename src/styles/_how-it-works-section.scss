@@ -14,9 +14,13 @@
   height: auto;
   counter-reset: section;
 
+  @include breakpoint(large) {
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+
   @include breakpoint(x-large) {
     gap: 40px;
-    flex-wrap: nowrap;
   }
 }
 

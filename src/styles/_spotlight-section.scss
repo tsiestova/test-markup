@@ -115,11 +115,10 @@
   flex-wrap: wrap;
   row-gap: var(--gallery-spacing);
 
-  @include breakpoint(x-large) {
+  @include breakpoint(large) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     grid-auto-rows: 551px;
   }
-
 }
