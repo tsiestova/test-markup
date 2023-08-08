@@ -1,741 +1,819 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-            rel="icon"
-            type="image/png"
-            sizes="32x32"
-            href="./assets/favicon-32x32.png"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
-            rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
     />
     <title></title>
-</head>
-<body>
-<div class="page__container">
-    <header class="header">
+  </head>
+  <body>
+    <div class="page__container">
+      <header class="header">
         <div class="layout">
+            <button type="button" class="burger-menu">
+                <span></span>
+            </button>
             <figure class="header-logo">
-                <a href="#"><img src="./assets/logo.svg" alt=""></a>
-            </figure>
+            <a href="#"><img src="./assets/logo.svg" alt="" /></a>
+          </figure>
             <div class="header-navigation">
-                <div class="header__toggle-menu">
-                    <input type="checkbox">
-                    <div>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <nav class="nav-bar header_nav-bar"><!-- Any element can be used here -->
-                    <ul class="header__nav-links">
-                        <li class="header__nav-item"><a href="#">Venues</a></li>
-                        <li class="header__nav-item"><a href="#">Vendors</a></li>
-                        <li class="header__nav-item"><a href="#">Blog</a></li>
-                        <li class="header__nav-item"><a href="#">About</a></li>
-                        <li class="header__nav-item"><a href="#">Contact</a></li>
-                        <li class="header__nav-item"><a href="#">Log in</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="header__btn-wrap">
-                <button type="button" class="btn btn-primary">Book your event</button>
-                <button type="button" class="btn btn-outline">Become a partner</button>
-            </div>
-        </div>initial-section__company-list
-    </header>
+              <nav class="nav-bar header_nav-bar">
+                  <!-- Any element can be used here -->
+                  <ul class="header__nav-links">
+                      <li class="header__nav-item"><a href="#">Venues</a></li>
+                      <li class="header__nav-item"><a href="#">Vendors</a></li>
+                      <li class="header__nav-item"><a href="#">Blog</a></li>
+                      <li class="header__nav-item"><a href="#">About</a></li>
+                      <li class="header__nav-item"><a href="#">Contact</a></li>
+                      <li class="header__nav-item"><a href="#">Log in</a></li>
+                  </ul>
+              </nav>
+              <div class="header__btn-wrap">
+                  <button type="button" class="btn btn-primary">
+                      Book your event
+                  </button>
+                  <button type="button" class="btn btn-outline">
+                      Become a partner
+                  </button>
+              </div>
+          </div>
+        </div>
+      </header>
 
-    <main class="main-layout">
+      <main class="main-layout">
         <!-- initial section -->
         <section class="page-section page-section_dark initial-section">
-            <div class="layout">
-                <div class="initial-section__pic-container">
-                    <h2 class="initial-section__heading">Book Stunning Venues and Expert Vendors</h2>
-                    <div class="initial-section__btn-wrap">
-                        <button type="button" class="btn btn-light">Browse NYC</button>
-                        <button type="button" class="btn btn-light">Browse LA</button>
-                    </div>
-                    <div class="initial-section__bottom-container">
-                        <div>
-                            <button type="button" class="btn-play">
-                                <i class="icon icon-play-arrow-outline-rounded"></i>
-                                Play Video
-                            </button>
-                        </div>
-                        <div>
-                            <button type="button" class="initial__btn-arrow">
-                                <div>Explore more</div>
-                                <i class="icon icon-back-rounded"></i>
-                            </button>
-                        </div>
-                        <div>
-                            <ul class="initial-section__pagination">
-                                <li class="initial-section__pagination-item active"></li>
-                                <li class="initial-section__pagination-item"></li>
-                                <li class="initial-section__pagination-item"></li>
-                            </ul>
-                        </div>
-                    </div>
-
+          <div class="layout">
+            <div class="initial-section__pic-container">
+              <h2 class="initial-section__heading">
+                Book Stunning Venues and Expert Vendors
+              </h2>
+              <div class="initial-section__btn-wrap">
+                <button type="button" class="btn btn-light">Browse NYC</button>
+                <button type="button" class="btn btn-light">Browse LA</button>
+              </div>
+              <div class="initial-section__bottom-container">
+                <div>
+                  <button type="button" class="btn-play">
+                    <i class="icon icon-play-arrow-outline-rounded"></i>
+                    Play Video
+                  </button>
                 </div>
-                <div class="initial-section__gallery-container">
-                    <h3 class="initial-section__gallery-container__heading">Stunning event venues</h3>
-                    <div class="initial-section__gallery-container__content">Browse Our Unique Selection of Spaces</div>
-                    <ul class="initial-section__gallery-list">
-                        <li class="initial-section__gallery-item">
-                            <a href="#">
-
-                                <figure class="gallery-item__pic"><img src="./assets/initial/card1.jpg" alt=""></figure>
-                                <div class="gallery-item__text-wrap">
-                                    <div class="initial-section__location">FIDI, NY</div>
-                                    <div class="gallery-item__title">180 Maiden Lane</div>
-                                    <div class="gallery-item__content">The heart of the Financial District…
-                                        180 Maiden is the premier space for everything New York City.
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="initial-section__gallery-item">
-                            <a href="#">
-                                <figure class="gallery-item__pic"><img src="./assets/initial/card2.jpg" alt=""></figure>
-                                <div class="gallery-item__text-wrap">
-                                    <div class="initial-section__location">Greenwhich, NY</div>
-                                    <div class="gallery-item__title">160 Varicke</div>
-                                    <div class="gallery-item__content">Incredible white box space is conveniently
-                                        located on the border of Greenwich Village and Soho, and steps from multiple
-                                        subway stations.
-                                    </div>
-                                </div>
-
-                            </a>
-                        </li>
-                        <li class="initial-section__gallery-item">
-                            <a href="#">
-                                <figure class="gallery-item__pic"><img src="./assets/initial/card3.jpg" alt=""></figure>
-                                <div class="gallery-item__text-wrap">
-                                    <div class="initial-section__location">
-                                        Brooklyn, NY
-                                    </div>
-                                    <div class="gallery-item__title">Avant Gardner</div>
-                                    <div class="gallery-item__content">Our 80,000 square foot venue complex occupies an
-                                        entire city block of industrial East Williamsburg,
-                                    </div>
-                                </div>
-
-                            </a>
-                        </li>
-                    </ul>
+                <div>
+                  <button type="button" class="initial__btn-arrow">
+                    <div>Explore more</div>
+                    <i class="icon icon-back-rounded"></i>
+                  </button>
                 </div>
-                <div class="initial-section__company-container">
-                    <h3 class="initial-section__company-container__heading">Trusted by</h3>
-                    <ul class="initial-section__company-list">
-                        <li class="initial-section__company-item company-item__aplle">
-                            <img src="./assets/initial/apple.svg" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/cisco.png" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/meta.svg" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/mood.svg" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/freshworks.svg" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/eight-sleep.svg" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/conversica.svg" alt="">
-                        </li>
-
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/ease.svg" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/xerox.svg" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/philz.svg" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/oracle.svg" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/hallmark.svg" alt="">
-                        </li>
-                        <li class="initial-section__company-item">
-                            <img src="./assets/initial/lwcc.svg" alt="">
-                        </li>
-
-                    </ul>
+                <div>
+                  <ul class="initial-section__pagination">
+                    <li class="initial-section__pagination-item active"></li>
+                    <li class="initial-section__pagination-item"></li>
+                    <li class="initial-section__pagination-item"></li>
+                  </ul>
                 </div>
+              </div>
             </div>
+            <div class="initial-section__gallery-container">
+              <h3 class="initial-section__gallery-container__heading">
+                Stunning event venues
+              </h3>
+              <div class="initial-section__gallery-container__content">
+                Browse Our Unique Selection of Spaces
+              </div>
+              <ul class="initial-section__gallery-list">
+                <li class="initial-section__gallery-item">
+                  <a href="#">
+                    <figure class="gallery-item__pic">
+                      <img src="./assets/initial/card1.jpg" alt="" />
+                    </figure>
+                    <div class="gallery-item__text-wrap">
+                      <div class="initial-section__location">FIDI, NY</div>
+                      <div class="gallery-item__title">180 Maiden Lane</div>
+                      <div class="gallery-item__content">
+                        The heart of the Financial District… 180 Maiden is the
+                        premier space for everything New York City.
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="initial-section__gallery-item">
+                  <a href="#">
+                    <figure class="gallery-item__pic">
+                      <img src="./assets/initial/card2.jpg" alt="" />
+                    </figure>
+                    <div class="gallery-item__text-wrap">
+                      <div class="initial-section__location">
+                        Greenwhich, NY
+                      </div>
+                      <div class="gallery-item__title">160 Varicke</div>
+                      <div class="gallery-item__content">
+                        Incredible white box space is conveniently located on
+                        the border of Greenwich Village and Soho, and steps from
+                        multiple subway stations.
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="initial-section__gallery-item">
+                  <a href="#">
+                    <figure class="gallery-item__pic">
+                      <img src="./assets/initial/card3.jpg" alt="" />
+                    </figure>
+                    <div class="gallery-item__text-wrap">
+                      <div class="initial-section__location">Brooklyn, NY</div>
+                      <div class="gallery-item__title">Avant Gardner</div>
+                      <div class="gallery-item__content">
+                        Our 80,000 square foot venue complex occupies an entire
+                        city block of industrial East Williamsburg,
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="initial-section__company-container">
+              <h3 class="initial-section__company-container__heading">
+                Trusted by
+              </h3>
+              <ul class="initial-section__company-list">
+                <li class="initial-section__company-item company-item__aplle">
+                  <img src="./assets/initial/apple.svg" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/cisco.png" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/meta.svg" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/mood.svg" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/freshworks.svg" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/eight-sleep.svg" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/conversica.svg" alt="" />
+                </li>
+
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/ease.svg" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/xerox.svg" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/philz.svg" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/oracle.svg" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/hallmark.svg" alt="" />
+                </li>
+                <li class="initial-section__company-item">
+                  <img src="./assets/initial/lwcc.svg" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
         <!--/initial section -->
 
         <!-- Spotlight -->
         <section class="page-section page-section_light spotlight-section">
-            <div class="layout">
-                <h3 class="spotlight-section__heading">Spotlight</h3>
-                <ul class="spotlight-section__gallery-list">
-                    <li class="spotlight-section__gallery-item">
-                        <a href="#">
-                            <img class="gallery-item__pic" src="./assets/spotlight/1.jpg" alt="">
-                            <div class="gallery-item__text-wrap">
-                                <div class="gallery-item__category">Ny venue</div>
-                                <div class="gallery-item__content">299 Park - Midtown gem
-                                    for Conferences & Corporate events
-                                </div>
-                                <div class="open-link">discover more</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="spotlight-section__gallery-item">
-                        <a href="#">
-                            <img class="gallery-item__pic" src="./assets/spotlight/2.png" alt="">
-                            <div class="gallery-item__text-wrap">
-                                <div class="gallery-item__category">LA Venue</div>
-                                <div class="gallery-item__content">The Grant - A Los Angeles' filmakers dream in West
-                                    Hollwood.
-                                </div>
-                                <div class="open-link">discover more</div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="spotlight-section__gallery-item">
-                        <a href="#">
-                            <img class="gallery-item__pic" src="./assets/spotlight/3.jpg" alt="">
-                            <div class="gallery-item__text-wrap">
-                                <div class="gallery-item__category">NY Vendor</div>
-                                <div class="gallery-item__content">On the Marc - Culinary brilliance meets full service
-                                    catering
-                                </div>
-                                <div class="open-link">discover more</div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="spotlight-section__gallery-item">
-                        <a href="#">
-                            <img class="gallery-item__pic" src="./assets/spotlight/4.jpg" alt="">
-                            <div class="gallery-item__text-wrap">
-                                <div class="gallery-item__category">LA VENUE</div>
-                                <div class="gallery-item__content">The Pavilion
-                                    Throw a lavish event in the heart of LA
-                                </div>
-                                <div class="open-link">discover more</div>
-                            </div>
-                        </a>
-
-                    </li>
-                    <li class="spotlight-section__gallery-item">
-                        <a href="#">
-                            <img class="gallery-item__pic" src="./assets/spotlight/5.jpg" alt="">
-                            <div class="gallery-item__text-wrap">
-                                <div class="gallery-item__category">LA vendor</div>
-                                <div class="gallery-item__content">Annie Campbell -Signature warmth and unparalleled
-                                    attention to details.
-                                </div>
-                                <div class="open-link">discover more</div>
-                            </div>
-                        </a>
-
-                    </li>
-                </ul>
-            </div>
+          <div class="layout">
+            <h3 class="spotlight-section__heading">Spotlight</h3>
+            <ul class="spotlight-section__gallery-list">
+              <li class="spotlight-section__gallery-item">
+                <a href="#">
+                  <img
+                    class="gallery-item__pic"
+                    src="./assets/spotlight/1.jpg"
+                    alt=""
+                  />
+                  <div class="gallery-item__text-wrap">
+                    <div class="gallery-item__category">Ny venue</div>
+                    <div class="gallery-item__content">
+                      299 Park - Midtown gem for Conferences & Corporate events
+                    </div>
+                    <div class="open-link">discover more</div>
+                  </div>
+                </a>
+              </li>
+              <li class="spotlight-section__gallery-item">
+                <a href="#">
+                  <img
+                    class="gallery-item__pic"
+                    src="./assets/spotlight/2.png"
+                    alt=""
+                  />
+                  <div class="gallery-item__text-wrap">
+                    <div class="gallery-item__category">LA Venue</div>
+                    <div class="gallery-item__content">
+                      The Grant - A Los Angeles' filmakers dream in West
+                      Hollwood.
+                    </div>
+                    <div class="open-link">discover more</div>
+                  </div>
+                </a>
+              </li>
+              <li class="spotlight-section__gallery-item">
+                <a href="#">
+                  <img
+                    class="gallery-item__pic"
+                    src="./assets/spotlight/3.jpg"
+                    alt=""
+                  />
+                  <div class="gallery-item__text-wrap">
+                    <div class="gallery-item__category">NY Vendor</div>
+                    <div class="gallery-item__content">
+                      On the Marc - Culinary brilliance meets full service
+                      catering
+                    </div>
+                    <div class="open-link">discover more</div>
+                  </div>
+                </a>
+              </li>
+              <li class="spotlight-section__gallery-item">
+                <a href="#">
+                  <img
+                    class="gallery-item__pic"
+                    src="./assets/spotlight/4.jpg"
+                    alt=""
+                  />
+                  <div class="gallery-item__text-wrap">
+                    <div class="gallery-item__category">LA VENUE</div>
+                    <div class="gallery-item__content">
+                      The Pavilion Throw a lavish event in the heart of LA
+                    </div>
+                    <div class="open-link">discover more</div>
+                  </div>
+                </a>
+              </li>
+              <li class="spotlight-section__gallery-item">
+                <a href="#">
+                  <img
+                    class="gallery-item__pic"
+                    src="./assets/spotlight/5.jpg"
+                    alt=""
+                  />
+                  <div class="gallery-item__text-wrap">
+                    <div class="gallery-item__category">LA vendor</div>
+                    <div class="gallery-item__content">
+                      Annie Campbell -Signature warmth and unparalleled
+                      attention to details.
+                    </div>
+                    <div class="open-link">discover more</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
         <!--/Spotlight -->
 
         <!-- BLACE Insider -->
         <section class="page-section page-section_blue insider-section">
-            <div class="layout">
-                <div class="insider-section__wrap">
-                    <h3 class="insider-section__heading">BLACE Insider</h3>
-                    <p class="insider-section__content">Get the BLACE Insider scoop on the latest venues, trends, and
-                        behind-the-scenes in the events industry, all inside our exclusive newsletter.
-                    </p>
-                </div>
+          <div class="layout">
+            <div class="insider-section__wrap">
+              <h3 class="insider-section__heading">BLACE Insider</h3>
+              <p class="insider-section__content">
+                Get the BLACE Insider scoop on the latest venues, trends, and
+                behind-the-scenes in the events industry, all inside our
+                exclusive newsletter.
+              </p>
             </div>
-            <div class="insider-section__form-wrap">
-                <form action="#" method="post" class="insider-section__form">
-                    <div class="input-wrap input-outline">
-                        <input class="input" type="text" placeholder="Name">
-                    </div>
-                    <div class="input-wrap input-outline">
-                        <input class="input" type="email" placeholder="Email">
-                    </div>
-                    <div class="btn__wrap">
-                        <button type="button" class="btn btn-outline">Become an Insider</button>
-                    </div>
-                </form>
-            </div>
+          </div>
+          <div class="insider-section__form-wrap">
+            <form action="#" method="post" class="insider-section__form">
+              <div class="input-wrap input-outline">
+                <input class="input" type="text" placeholder="Name" />
+              </div>
+              <div class="input-wrap input-outline">
+                <input class="input" type="email" placeholder="Email" />
+              </div>
+              <div class="btn__wrap">
+                <button type="button" class="btn btn-outline">
+                  Become an Insider
+                </button>
+              </div>
+            </form>
+          </div>
         </section>
         <!--/BLACE Insider -->
 
         <!-- How it Works -->
         <section class="page-section page-section_light how-it-works-section">
-            <div class="layout">
-                <h3 class="how-it-works-section__heading">How it Works</h3>
-                <ol class="how-it-works-section__steps-list">
-                    <li class="how-it-works-section__step-item">
-                        <div class="step-item__title">Find a Venue</div>
-                        <div class="step-item__body">Our portfolio boasts NYC & LA's premier and never before seen
-                            event spaces.
-                        </div>
-                        <button type="button" class="step-item__link">
-                            Browse Venues
-                            <i class="icon-arrow-right"></i>
-                        </button>
-                    </li>
-                    <li class="how-it-works-section__step-item">
-                        <div class="step-item__title">Find Vendors</div>
-                        <div class="step-item__body">Our trusted vendors range from caterers, AV & lighting, floral,
-                            décor, photo, video and staffing – you name it, our vendors will make your event memorable.
-                        </div>
-                        <button type="button" class="step-item__link">
-                            Browse Vendors
-                            <i class="icon-arrow-right"></i>
-                        </button>
-                    </li>
-                    <li class="how-it-works-section__step-item">
-                        <div class="step-item__title">Book Your
-                            Dream Event
-                        </div>
-                        <div class="step-item__body">Our booking tool makes it easy to request proposals, book your
-                            venue + vendors and make secure payments all in one place. 
-                        </div>
-                        <button type="button" class="step-item__link">
-                            Book Now
-                            <i class="icon-arrow-right"></i>
-                        </button>
-                    </li>
-                </ol>
-            </div>
+          <div class="layout">
+            <h3 class="how-it-works-section__heading">How it Works</h3>
+            <ol class="how-it-works-section__steps-list">
+              <li class="how-it-works-section__step-item">
+                <div class="step-item__title">Find a Venue</div>
+                <div class="step-item__body">
+                  Our portfolio boasts NYC & LA's premier and never before seen
+                  event spaces.
+                </div>
+                <button type="button" class="step-item__link">
+                  Browse Venues
+                  <i class="icon-arrow-right"></i>
+                </button>
+              </li>
+              <li class="how-it-works-section__step-item">
+                <div class="step-item__title">Find Vendors</div>
+                <div class="step-item__body">
+                  Our trusted vendors range from caterers, AV & lighting,
+                  floral, décor, photo, video and staffing – you name it, our
+                  vendors will make your event memorable.
+                </div>
+                <button type="button" class="step-item__link">
+                  Browse Vendors
+                  <i class="icon-arrow-right"></i>
+                </button>
+              </li>
+              <li class="how-it-works-section__step-item">
+                <div class="step-item__title">Book Your Dream Event</div>
+                <div class="step-item__body">
+                  Our booking tool makes it easy to request proposals, book your
+                  venue + vendors and make secure payments all in one place. 
+                </div>
+                <button type="button" class="step-item__link">
+                  Book Now
+                  <i class="icon-arrow-right"></i>
+                </button>
+              </li>
+            </ol>
+          </div>
         </section>
         <!-- How it Works -->
 
         <!-- Expert Vendors -->
         <section class="page-section page-section_dark expert-vendors-section">
-            <div class="layout">
-                <h2 class="expert-vendors-section__heading">Expert Vendors</h2>
-                <div class="expert-vendors-section__subheading">Search BLACE's Trusted Vendor Network</div>
-
-                <div class="expert-vendors__btn-wrap">
-                    <div class="btn-wrap">
-                        <button type="button" class="btn btn-light">Browse NYC Vendors</button>
-                    </div>
-                    <div class="btn-wrap">
-                        <button type="button" class="btn btn-light">Browse LA Vendors</button>
-                    </div>
-                </div>
-                <ul class="expert-vendors-section__cards-list">
-                    <li class="expert-vendors-section__card-item">
-                        <a href="#">
-                            <figure class="expert-vendors-section__pic">
-                                <img src="./assets/expert-vendors/1.jpg" alt="">
-                            </figure>
-                            <div class="expert-vendors-section__inner">
-                                <div class="expert-vendors-section__inner__box">
-                                    <div class="card-item__currency">
-                                        <span class="currency__item active">$</span>
-                                        <span class="currency__item active">$</span>
-                                        <span class="currency__item active">$</span>
-                                        <span class="currency__item">$</span>
-                                    </div>
-                                    <div class="card-item__category">Catering</div>
-                                </div>
-                                <div class="card-item__title">Abigail Kirsch</div>
-                                <div class="card-item__content">As NYC’s market leader in catering and events, Abigail
-                                    Kirsch
-                                    takes great pride in driving culinary trends.
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="expert-vendors-section__card-item">
-                        <a href="#">
-                            <figure class="expert-vendors-section__pic">
-                                <img src="./assets/expert-vendors/2.jpg" alt="">
-                            </figure>
-                            <div class="expert-vendors-section__inner">
-                                <div class="expert-vendors-section__inner__box">
-                                    <div class="card-item__currency">
-                                        <span class="currency__item active">$</span>
-                                        <span class="currency__item">$</span>
-                                        <span class="currency__item">$</span>
-                                        <span class="currency__item">$</span>
-                                    </div>
-                                    <div class="card-item__category">Entertainment</div>
-                                </div>
-                                <div class="card-item__title">Acute Inflections</div>
-                                <div class="card-item__content">A velvety mix of Erykah Badu & Billie Holiday paired
-                                    with the
-                                    cool grooves of her 007 on bass
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="expert-vendors-section__card-item">
-                        <a href="#">
-                            <figure class="expert-vendors-section__pic">
-                                <img src="./assets/expert-vendors/3.jpg" alt="">
-                            </figure>
-                            <div class="expert-vendors-section__inner">
-                                <div class="expert-vendors-section__inner__box">
-                                    <div class="card-item__currency">
-                                        <span class="currency__item active">$</span>
-                                        <span class="currency__item active">$</span>
-                                        <span class="currency__item active">$</span>
-                                        <span class="currency__item">$</span>
-                                    </div>
-                                    <div class="card-item__category">Floral & Decor</div>
-                                </div>
-                                <div class="card-item__title">AbigailBig Apple Florist</div>
-                                <div class="card-item__content">ABig Apple Florist has been New York City’s premier
-                                    florist
-                                    since 1991. Our studio is located directly in the heart of Midtown Manhattan.
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="expert-vendors-section__card-item">
-                        <a href="#">
-                            <figure class="expert-vendors-section__pic">
-                                <img src="./assets/expert-vendors/1.jpg" alt="">
-                            </figure>
-                            <div class="expert-vendors-section__inner">
-                                <div class="expert-vendors-section__inner__box">
-                                    <div class="card-item__currency">
-                                        <span class="currency__item active">$</span>
-                                        <span class="currency__item active">$</span>
-                                        <span class="currency__item active">$</span>
-                                        <span class="currency__item">$</span>
-                                    </div>
-                                    <div class="card-item__category">Catering</div>
-                                </div>
-                                <div class="card-item__title">Bartleby & Sage</div>
-                                <div class="card-item__content">Bartleby & Sage is a fine catering and event planning
-                                    company
-                                    based in Brooklyn, New York.
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                </ul>
+          <div class="layout">
+            <h2 class="expert-vendors-section__heading">Expert Vendors</h2>
+            <div class="expert-vendors-section__subheading">
+              Search BLACE's Trusted Vendor Network
             </div>
+
+            <div class="expert-vendors__btn-wrap">
+              <div class="btn-wrap">
+                <button type="button" class="btn btn-light">
+                  Browse NYC Vendors
+                </button>
+              </div>
+              <div class="btn-wrap">
+                <button type="button" class="btn btn-light">
+                  Browse LA Vendors
+                </button>
+              </div>
+            </div>
+            <ul class="expert-vendors-section__cards-list">
+              <li class="expert-vendors-section__card-item">
+                <a href="#">
+                  <figure class="expert-vendors-section__pic">
+                    <img src="./assets/expert-vendors/1.jpg" alt="" />
+                  </figure>
+                  <div class="expert-vendors-section__inner">
+                    <div class="expert-vendors-section__inner__box">
+                      <div class="card-item__currency">
+                        <span class="currency__item active">$</span>
+                        <span class="currency__item active">$</span>
+                        <span class="currency__item active">$</span>
+                        <span class="currency__item">$</span>
+                      </div>
+                      <div class="card-item__category">Catering</div>
+                    </div>
+                    <div class="card-item__title">Abigail Kirsch</div>
+                    <div class="card-item__content">
+                      As NYC’s market leader in catering and events, Abigail
+                      Kirsch takes great pride in driving culinary trends.
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="expert-vendors-section__card-item">
+                <a href="#">
+                  <figure class="expert-vendors-section__pic">
+                    <img src="./assets/expert-vendors/2.jpg" alt="" />
+                  </figure>
+                  <div class="expert-vendors-section__inner">
+                    <div class="expert-vendors-section__inner__box">
+                      <div class="card-item__currency">
+                        <span class="currency__item active">$</span>
+                        <span class="currency__item">$</span>
+                        <span class="currency__item">$</span>
+                        <span class="currency__item">$</span>
+                      </div>
+                      <div class="card-item__category">Entertainment</div>
+                    </div>
+                    <div class="card-item__title">Acute Inflections</div>
+                    <div class="card-item__content">
+                      A velvety mix of Erykah Badu & Billie Holiday paired with
+                      the cool grooves of her 007 on bass
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="expert-vendors-section__card-item">
+                <a href="#">
+                  <figure class="expert-vendors-section__pic">
+                    <img src="./assets/expert-vendors/3.jpg" alt="" />
+                  </figure>
+                  <div class="expert-vendors-section__inner">
+                    <div class="expert-vendors-section__inner__box">
+                      <div class="card-item__currency">
+                        <span class="currency__item active">$</span>
+                        <span class="currency__item active">$</span>
+                        <span class="currency__item active">$</span>
+                        <span class="currency__item">$</span>
+                      </div>
+                      <div class="card-item__category">Floral & Decor</div>
+                    </div>
+                    <div class="card-item__title">AbigailBig Apple Florist</div>
+                    <div class="card-item__content">
+                      ABig Apple Florist has been New York City’s premier
+                      florist since 1991. Our studio is located directly in the
+                      heart of Midtown Manhattan.
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="expert-vendors-section__card-item">
+                <a href="#">
+                  <figure class="expert-vendors-section__pic">
+                    <img src="./assets/expert-vendors/1.jpg" alt="" />
+                  </figure>
+                  <div class="expert-vendors-section__inner">
+                    <div class="expert-vendors-section__inner__box">
+                      <div class="card-item__currency">
+                        <span class="currency__item active">$</span>
+                        <span class="currency__item active">$</span>
+                        <span class="currency__item active">$</span>
+                        <span class="currency__item">$</span>
+                      </div>
+                      <div class="card-item__category">Catering</div>
+                    </div>
+                    <div class="card-item__title">Bartleby & Sage</div>
+                    <div class="card-item__content">
+                      Bartleby & Sage is a fine catering and event planning
+                      company based in Brooklyn, New York.
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
         <!--/Expert Vendors -->
 
         <!-- Stay in the Know -->
-        <section class="page-section page-section_light stay-in-the-know-section">
-            <div class="layout">
-                <div class="stay-in-the-know-section__text-container">
-                    <div class="stay-in-the-know-section__text-wrap">
-                        <h2 class="stay-in-the-know-section__heading">Stay in the Know</h2>
-                        <div class="stay-in-the-know-section__content">Looking for premium blank spaces for a large
-                            production?
-                            Or maybe you need the perfect corporate meeting spot? Consider the BLACE Blog your resource
-                            for all
-                            things events!
-                        </div>
-                    </div>
-                    <div class="stay-in-the-know__btn">
-                        <button type="button" class="btn btn-dark">Read More</button>
-                    </div>
+        <section
+          class="page-section page-section_light stay-in-the-know-section"
+        >
+          <div class="layout">
+            <div class="stay-in-the-know-section__text-container">
+              <div class="stay-in-the-know-section__text-wrap">
+                <h2 class="stay-in-the-know-section__heading">
+                  Stay in the Know
+                </h2>
+                <div class="stay-in-the-know-section__content">
+                  Looking for premium blank spaces for a large production? Or
+                  maybe you need the perfect corporate meeting spot? Consider
+                  the BLACE Blog your resource for all things events!
                 </div>
-                <ul class="stay-in-the-know-section__cards__list">
-                    <li class="stay-in-the-know-section__card__item">
-                        <a href="#">
-                            <div class="stay-in-the-know-section__card-inner">
-                                <div class="card-category">EVENT PLANNING</div>
-                                <div class="card-title">Top 18 NYC Caterers to Book for Your Next Event</div>
-                            </div>
-                            <figure class="card-pic">
-                                <img src="./assets/stayInKnow/1.jpg" alt="">
-                            </figure>
-                        </a>
-
-                    </li>
-                    <li class="stay-in-the-know-section__card__item">
-                        <a href="#">
-                            <div class="stay-in-the-know-section__card-inner">
-                                <div class="card-category">EVENT PLANNING</div>
-                                <div class="card-title">How To Find Great Event Vendors
-                                    In New York City
-                                </div>
-                            </div>
-                            <figure class="card-pic">
-                                <img src="./assets/stayInKnow/2.jpg" alt="">
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="stay-in-the-know-section__card__item">
-                        <a href="#">
-                            <div class="stay-in-the-know-section__card-inner">
-                                <div class="card-category">EVENT PLANNING</div>
-                                <div class="card-title">Brooklyn Venues that are Best
-                                    for Holiday Parties
-                                </div>
-                            </div>
-                            <figure class="card-pic">
-                                <img src="./assets/stayInKnow/4.jpg" alt="">
-                            </figure>
-                        </a>
-                    </li>
-                    <li class="stay-in-the-know-section__card__item">
-                        <a href="#">
-                            <div class="stay-in-the-know-section__card-inner">
-                                <div class="card-category">EVENT PLANNING</div>
-                                <div class="card-title">Event Space Spotlight: 180 Maiden Lane</div>
-                                ]
-                            </div>
-                            <figure class="card-pic">
-                                <img src="./assets/stayInKnow/3.jpg" alt="">
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
+              </div>
+              <div class="stay-in-the-know__btn">
+                <button type="button" class="btn btn-dark">Read More</button>
+              </div>
             </div>
+            <ul class="stay-in-the-know-section__cards__list">
+              <li class="stay-in-the-know-section__card__item">
+                <a href="#">
+                  <div class="stay-in-the-know-section__card-inner">
+                    <div class="card-category">EVENT PLANNING</div>
+                    <div class="card-title">
+                      Top 18 NYC Caterers to Book for Your Next Event
+                    </div>
+                  </div>
+                  <figure class="card-pic">
+                    <img src="./assets/stayInKnow/1.jpg" alt="" />
+                  </figure>
+                </a>
+              </li>
+              <li class="stay-in-the-know-section__card__item">
+                <a href="#">
+                  <div class="stay-in-the-know-section__card-inner">
+                    <div class="card-category">EVENT PLANNING</div>
+                    <div class="card-title">
+                      How To Find Great Event Vendors In New York City
+                    </div>
+                  </div>
+                  <figure class="card-pic">
+                    <img src="./assets/stayInKnow/2.jpg" alt="" />
+                  </figure>
+                </a>
+              </li>
+              <li class="stay-in-the-know-section__card__item">
+                <a href="#">
+                  <div class="stay-in-the-know-section__card-inner">
+                    <div class="card-category">EVENT PLANNING</div>
+                    <div class="card-title">
+                      Brooklyn Venues that are Best for Holiday Parties
+                    </div>
+                  </div>
+                  <figure class="card-pic">
+                    <img src="./assets/stayInKnow/4.jpg" alt="" />
+                  </figure>
+                </a>
+              </li>
+              <li class="stay-in-the-know-section__card__item">
+                <a href="#">
+                  <div class="stay-in-the-know-section__card-inner">
+                    <div class="card-category">EVENT PLANNING</div>
+                    <div class="card-title">
+                      Event Space Spotlight: 180 Maiden Lane
+                    </div>
+                    ]
+                  </div>
+                  <figure class="card-pic">
+                    <img src="./assets/stayInKnow/3.jpg" alt="" />
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
         <!--/Stay in the Know -->
 
         <!-- Become a BLACE Partner -->
         <section class="page-section page-section_blue become-blace-section">
-            <div class="layout">
-                <div class="become-blace-section__inner">
-                    <div class="become-blace-section__text-wrap">
-                        <h2 class="become-blace-section__heading">Become a BLACE Partner</h2>
-                        <div class="blace-section__btn-container">
-                            <div class="btn__wrap">
-                                <button type="button" class="btn btn-light">Become a Vendor</button>
-                            </div>
-                            <div class="btn__wrap">
-                                <button type="button" class="btn btn-light">List your venue</button>
-                            </div>
-                        </div>
-                    </div>
-                    <figure class="become-blace-section__pic">
-                        <img src="./assets/blace.jpg" alt="">
-                    </figure>
+          <div class="layout">
+            <div class="become-blace-section__inner">
+              <div class="become-blace-section__text-wrap">
+                <h2 class="become-blace-section__heading">
+                  Become a BLACE Partner
+                </h2>
+                <div class="blace-section__btn-container">
+                  <div class="btn__wrap">
+                    <button type="button" class="btn btn-light">
+                      Become a Vendor
+                    </button>
+                  </div>
+                  <div class="btn__wrap">
+                    <button type="button" class="btn btn-light">
+                      List your venue
+                    </button>
+                  </div>
                 </div>
-
+              </div>
+              <figure class="become-blace-section__pic">
+                <img src="./assets/blace.jpg" alt="" />
+              </figure>
             </div>
+          </div>
         </section>
         <!--/Become a BLACE Partner -->
 
         <!-- Event Packages -->
         <section class="page-section page-section_dark event-packages-section">
-            <div class="layout">
-                <div class="event-packages__btn-arrow-wrap">
-                    <button type="button" class="event-packages__btn-arrow">
-                        <div>view all</div>
-                        <i class="icon icon-arrow-right"></i>
-                    </button>
-                </div>
-
-                <h2 class="event-packages-section__heading">Event Packages</h2>
-                <ul class="event-packages-section__cards-list">
-                    <li class="event-packages-section__card-item">
-                        <figure class="event-packages__pic-container">
-                            <img src="./assets/event-pacages/1.jpg" alt="">
-                        </figure>
-                        <div class="event-packages__text-container">
-                            <h3 class="card-title">THE LOUNGE
-                                AT CHELSEA INDUSTRIAL</h3>
-                            <div class="card-content">A chic industrial space comes to life with lighting and flowers.
-                                Customize your look, or let us design it for you.
-                            </div>
-                            <div class="card-category">starting at</div>
-                            <div class="price"><span>$</span><span>350</span>/per person</div>
-                            <div class="card-category">Includes</div>
-                            <div class="card-details">Venue / Passed Hors d'oeuvres /Full Bar /AV/Lighting /Decor
-                                Rentals
-                            </div>
-                            <div class="event-packages__btn-wrap">
-                                <a href="#" type="button" class="btn btn-light">learn more</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-packages-section__card-item">
-                        <figure class="event-packages__pic-container">
-                            <img src="./assets/event-pacages/2.jpg" alt="">
-                        </figure>
-                        <div class="event-packages__text-container">
-                            <h3 class="card-title">The Mailroom </h3>
-                            <div class="card-content">Throw the party of the year in this one-of-a-kind speakeasy
-                                inspired venue.
-
-                            </div>
-                            <div class="card-category">starting at</div>
-                            <div class="price"><span>$</span><span>350</span>/per person</div>
-                            <div class="card-category">Includes</div>
-                            <div class="card-details">Venue / Passed Hors d'oeuvres /Full Bar /AV/Lighting /Decor
-                                Rentals
-                            </div>
-                            <div class="event-packages__btn-wrap">
-                                <a href="#" type="button" class="btn btn-light">learn more</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-packages-section__card-item">
-                        <figure class="event-packages__pic-container">
-                            <img src="./assets/event-pacages/3.jpg" alt="">
-                        </figure>
-                        <div class="event-packages__text-container">
-                            <h3 class="card-title">Museum Of The Dog</h3>
-                            <div class="card-content">Give guests something to talk about while mingling among art
-                                dedicated
-                                to man's bestfried.
-                            </div>
-                            <div class="card-category">starting at</div>
-                            <div class="price"><span>$</span><span>350</span>/per person</div>
-                            <div class="card-category">Includes</div>
-                            <div class="card-details">Venue / Passed Hors d'oeuvres /Full Bar /AV/Lighting /Decor
-                                Rentals
-                            </div>
-                            <div class="event-packages__btn-wrap">
-                                <a href="#" type="button" class="btn btn-light">learn more</a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+          <div class="layout">
+            <div class="event-packages__btn-arrow-wrap">
+              <button type="button" class="event-packages__btn-arrow">
+                <div>view all</div>
+                <i class="icon icon-arrow-right"></i>
+              </button>
             </div>
+
+            <h2 class="event-packages-section__heading">Event Packages</h2>
+            <ul class="event-packages-section__cards-list">
+              <li class="event-packages-section__card-item">
+                <figure class="event-packages__pic-container">
+                  <img src="./assets/event-pacages/1.jpg" alt="" />
+                </figure>
+                <div class="event-packages__text-container">
+                  <h3 class="card-title">THE LOUNGE AT CHELSEA INDUSTRIAL</h3>
+                  <div class="card-content">
+                    A chic industrial space comes to life with lighting and
+                    flowers. Customize your look, or let us design it for you.
+                  </div>
+                  <div class="card-category">starting at</div>
+                  <div class="price">
+                    <span>$</span><span>350</span>/per person
+                  </div>
+                  <div class="card-category">Includes</div>
+                  <div class="card-details">
+                    Venue / Passed Hors d'oeuvres /Full Bar /AV/Lighting /Decor
+                    Rentals
+                  </div>
+                  <div class="event-packages__btn-wrap">
+                    <a href="#" type="button" class="btn btn-light"
+                      >learn more</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="event-packages-section__card-item">
+                <figure class="event-packages__pic-container">
+                  <img src="./assets/event-pacages/2.jpg" alt="" />
+                </figure>
+                <div class="event-packages__text-container">
+                  <h3 class="card-title">The Mailroom </h3>
+                  <div class="card-content">
+                    Throw the party of the year in this one-of-a-kind speakeasy
+                    inspired venue.
+                  </div>
+                  <div class="card-category">starting at</div>
+                  <div class="price">
+                    <span>$</span><span>350</span>/per person
+                  </div>
+                  <div class="card-category">Includes</div>
+                  <div class="card-details">
+                    Venue / Passed Hors d'oeuvres /Full Bar /AV/Lighting /Decor
+                    Rentals
+                  </div>
+                  <div class="event-packages__btn-wrap">
+                    <a href="#" type="button" class="btn btn-light"
+                      >learn more</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="event-packages-section__card-item">
+                <figure class="event-packages__pic-container">
+                  <img src="./assets/event-pacages/3.jpg" alt="" />
+                </figure>
+                <div class="event-packages__text-container">
+                  <h3 class="card-title">Museum Of The Dog</h3>
+                  <div class="card-content">
+                    Give guests something to talk about while mingling among art
+                    dedicated to man's bestfried.
+                  </div>
+                  <div class="card-category">starting at</div>
+                  <div class="price">
+                    <span>$</span><span>350</span>/per person
+                  </div>
+                  <div class="card-category">Includes</div>
+                  <div class="card-details">
+                    Venue / Passed Hors d'oeuvres /Full Bar /AV/Lighting /Decor
+                    Rentals
+                  </div>
+                  <div class="event-packages__btn-wrap">
+                    <a href="#" type="button" class="btn btn-light"
+                      >learn more</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </section>
         <!--/Event Packages -->
 
         <!-- hosting in cities -->
         <section class="page-section page-section_light hoisting-section">
-            <div class="layout">
-                <ul class="hoisting-section__gallery-list">
-                    <li class="hoisting-section__gallery-item">
-                        <a href="#">
-                            <figure class="hoisting-section__pic">
-                                <img src="./assets/hoisting/Card.jpg" alt="">
-                            </figure>
-                            <div class="hoisting-section__text-wrap">
-                                <div class="gallery-item__title">Hosting In New York City?
-                                </div>
-                                <div class="hoisting-section__btn-wrap">
-                                    <button type="button" class="btn btn-blue">
-                                        Browse La Venues
-                                        <i class="icon icon-arrow-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-
-                        </a>
-
-                    </li>
-                    <li class="hoisting-section__gallery-item">
-                        <a href="#">
-                            <figure class="hoisting-section__pic">
-                                <img src="./assets/hoisting/Card2.jpg" alt="">
-                            </figure>
-                            <div class="hoisting-section__text-wrap">
-                                <div class="gallery-item__title">Filming in Los Angeles?
-                                </div>
-                                <div class="hoisting-section__btn-wrap">
-                                    <button type="button" class="btn btn-blue">
-                                        Browse La Venues
-                                        <i class="icon icon-arrow-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-
-                    </li>
-                </ul>
-            </div>
+          <div class="layout">
+            <ul class="hoisting-section__gallery-list">
+              <li class="hoisting-section__gallery-item">
+                <a href="#">
+                  <figure class="hoisting-section__pic">
+                    <img src="./assets/hoisting/Card.jpg" alt="" />
+                  </figure>
+                  <div class="hoisting-section__text-wrap">
+                    <div class="gallery-item__title">
+                      Hosting In New York City?
+                    </div>
+                    <div class="hoisting-section__btn-wrap">
+                      <button type="button" class="btn btn-blue">
+                        Browse La Venues
+                        <i class="icon icon-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="hoisting-section__gallery-item">
+                <a href="#">
+                  <figure class="hoisting-section__pic">
+                    <img src="./assets/hoisting/Card2.jpg" alt="" />
+                  </figure>
+                  <div class="hoisting-section__text-wrap">
+                    <div class="gallery-item__title">
+                      Filming in Los Angeles?
+                    </div>
+                    <div class="hoisting-section__btn-wrap">
+                      <button type="button" class="btn btn-blue">
+                        Browse La Venues
+                        <i class="icon icon-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
         </section>
         <!--/hosting in cities -->
-    </main>
+      </main>
 
-    <footer class="footer">
+      <footer class="footer">
         <div class="layout">
-            <div class="footer__inner">
-                <div>
-                    <figure class="footer-logo">
-                        <a href="#"><img src="./assets/logo.svg" alt=""></a>
-                    </figure>
-                    <ul class="footer__contacts">
-                        <li class="footer-contact-link">
-                            <a class="footer-contact-item footer__location" href="#">228 PARK AVE S PMB 44623 NEW YORK,
-                                NY 10003</a>
-                        </li>
-                        <li class="footer-contact-link">
-                            <a class="footer-contact-item footer__email" href="#">info@blace.com</a>
-                        </li>
-                        <li class="footer-contact-link">
-                            <a class="footer-contact-item footer__phone" href="#">+1(212)-574-7970</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="footer__nav-bar-wrap">
-                    <nav class="nav-bar footer_nav-bar">
-                        <!-- Any element can be used here -->
-                        <ul>
-                            <li class="footer__nav-item"><a href="#">About</a></li>
-                            <li class="footer__nav-item"><a href="#">Blog</a></li>
-                            <li class="footer__nav-item"><a href="#">Become a Partner</a></li>
-                            <li class="footer__nav-item"><a href="#">Careers</a></li>
-                            <li class="footer__nav-item"><a href="#">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div>
-                    <div class="footer__form__section">
-                        <div class="footer__form__title">Get exclusive trend reports + perks</div>
-                        <div class="footer__form__content">Get the BLACE Insider scoop on the latest venues, trends, and
-                            news in the event production
-                            industry, all inside our exclusive newsletter.
-                        </div>
-                        <div class="input-wrap">
-                            <input class="input" type="email" placeholder="Email">
-                        </div>
-                    </div>
-                    <ul class="social-media__list">
-                        <li class="social-media__item instagram"><a href="#"></a></li>
-                        <li class="social-media__item facebook"><a href="#"></a></li>
-                        <li class="social-media__item linkedin"><a href="#"></a></li>
-                        <li class="social-media__item pinterest"><a href="#"></a></li>
-                        <li class="social-media__item tiktok"><a href="#"></a></li>
-                    </ul>
-                </div>
+          <div class="footer__inner">
+            <div>
+              <figure class="footer-logo">
+                <a href="#"><img src="./assets/logo.svg" alt="" /></a>
+              </figure>
+              <ul class="footer__contacts">
+                <li class="footer-contact-link">
+                  <a class="footer-contact-item footer__location" href="#"
+                    >228 PARK AVE S PMB 44623 NEW YORK, NY 10003</a
+                  >
+                </li>
+                <li class="footer-contact-link">
+                  <a class="footer-contact-item footer__email" href="#"
+                    >info@blace.com</a
+                  >
+                </li>
+                <li class="footer-contact-link">
+                  <a class="footer-contact-item footer__phone" href="#"
+                    >+1(212)-574-7970</a
+                  >
+                </li>
+              </ul>
             </div>
+            <div class="footer__nav-bar-wrap">
+              <nav class="nav-bar footer_nav-bar">
+                <!-- Any element can be used here -->
+                <ul>
+                  <li class="footer__nav-item"><a href="#">About</a></li>
+                  <li class="footer__nav-item"><a href="#">Blog</a></li>
+                  <li class="footer__nav-item">
+                    <a href="#">Become a Partner</a>
+                  </li>
+                  <li class="footer__nav-item"><a href="#">Careers</a></li>
+                  <li class="footer__nav-item"><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div>
+              <div class="footer__form__section">
+                <div class="footer__form__title">
+                  Get exclusive trend reports + perks
+                </div>
+                <div class="footer__form__content">
+                  Get the BLACE Insider scoop on the latest venues, trends, and
+                  news in the event production industry, all inside our
+                  exclusive newsletter.
+                </div>
+                <div class="input-wrap">
+                  <input class="input" type="email" placeholder="Email" />
+                    <button type="button" class="form__content-btn">
+                        <i class="icon icon-send"></i>
+                    </button>
+                </div>
+              </div>
+              <ul class="social-media__list">
+                <li class="social-media__item instagram"><a href="#"></a></li>
+                <li class="social-media__item facebook"><a href="#"></a></li>
+                <li class="social-media__item linkedin"><a href="#"></a></li>
+                <li class="social-media__item pinterest"><a href="#"></a></li>
+                <li class="social-media__item tiktok"><a href="#"></a></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="footer__bottom-container">
-            <div class="layout">
-                <div class="footer__bottom-inner">
-                    <div class="footer__bottom-container__link">
-                        <button type="button" class="footer__btn-arrow">
-                            <i class="icon icon-arrow-up"></i>
-                            <div>Back To top</div>
-                        </button>
-                    </div>
-                    <div>
-                        <span>Terms of Use</span>
-                        <span>Privacy Policy</span>
-                    </div>
-                    <div>
-                        BLACE ©2023
-                    </div>
-                </div>
+          <div class="layout">
+            <div class="footer__bottom-inner">
+              <div class="footer__bottom-container__link">
+                <button type="button" class="footer__btn-arrow">
+                  <i class="icon icon-arrow-up"></i>
+                  <div>Back To top</div>
+                </button>
+              </div>
+              <div>
+                <span>Terms of Use</span>
+                <span>Privacy Policy</span>
+              </div>
+              <div>BLACE ©2023</div>
             </div>
+          </div>
         </div>
-    </footer>
-</div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
