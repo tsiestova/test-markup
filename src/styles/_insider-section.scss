@@ -1,22 +1,17 @@
-
 .insider-section {
-
   padding: var(--section-padding) 20px;
 
   @include breakpoint(x-large) {
     padding: 140px 0;
   }
-
 }
 
 .insider-section__wrap {
-
   @include breakpoint(x-large) {
     padding-left: 112px;
     max-width: 1200px;
   }
-  }
-
+}
 
 .insider-section__heading {
   color: var(--text-white);
@@ -24,7 +19,7 @@
   text-transform: capitalize;
   margin-bottom: 33px;
   text-align: center;
-  
+
   @include breakpoint(x-large) {
     text-align: left;
   }
@@ -55,7 +50,6 @@
   @include breakpoint(medium) {
     max-width: 60%;
     margin: auto;
-
   }
 
   @include breakpoint(large) {
@@ -66,16 +60,13 @@
 
   @include breakpoint(x-large) {
     gap: 60px;
-
   }
 
   .btn__wrap {
-
     @include breakpoint(medium) {
       flex-shrink: 0;
     }
   }
-
 
   .btn {
     color: var(--text-blue);
@@ -87,8 +78,6 @@
 }
 
 .insider-section__form-wrap {
-
-
   @include breakpoint(medium) {
     padding: 0 50px;
   }
@@ -98,4 +87,3 @@
     max-width: 1740px;
   }
 }
-

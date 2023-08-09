@@ -21,32 +21,32 @@
     <div class="page__container">
       <header class="header">
         <div class="layout">
-            <button type="button" class="burger-menu">
-                <span></span>
-            </button>
-            <figure class="header-logo">
+          <button type="button" class="burger-menu">
+            <span></span>
+          </button>
+          <figure class="header-logo">
             <a href="#"><img src="./assets/logo.svg" alt="" /></a>
           </figure>
-            <div class="header-navigation">
-              <nav class="nav-bar header_nav-bar">
-                  <!-- Any element can be used here -->
-                  <ul class="header__nav-links">
-                      <li class="header__nav-item"><a href="#">Venues</a></li>
-                      <li class="header__nav-item"><a href="#">Vendors</a></li>
-                      <li class="header__nav-item"><a href="#">Blog</a></li>
-                      <li class="header__nav-item"><a href="#">About</a></li>
-                      <li class="header__nav-item"><a href="#">Contact</a></li>
-                      <li class="header__nav-item"><a href="#">Log in</a></li>
-                  </ul>
-              </nav>
-              <div class="header__btn-wrap">
-                  <button type="button" class="btn btn-primary">
-                      Book your event
-                  </button>
-                  <button type="button" class="btn btn-outline">
-                      Become a partner
-                  </button>
-              </div>
+          <div class="header-navigation">
+            <nav class="nav-bar header_nav-bar">
+              <!-- Any element can be used here -->
+              <ul class="header__nav-links">
+                <li class="header__nav-item"><a href="#">Venues</a></li>
+                <li class="header__nav-item"><a href="#">Vendors</a></li>
+                <li class="header__nav-item"><a href="#">Blog</a></li>
+                <li class="header__nav-item"><a href="#">About</a></li>
+                <li class="header__nav-item"><a href="#">Contact</a></li>
+                <li class="header__nav-item"><a href="#">Log in</a></li>
+              </ul>
+            </nav>
+            <div class="header__btn-wrap">
+              <button type="button" class="btn btn-primary">
+                Book your event
+              </button>
+              <button type="button" class="btn btn-outline">
+                Become a partner
+              </button>
+            </div>
           </div>
         </div>
       </header>
@@ -55,140 +55,282 @@
         <!-- initial section -->
         <section class="page-section page-section_dark initial-section">
           <div class="layout">
-            <div class="initial-section__pic-container">
-              <h2 class="initial-section__heading">
-                Book Stunning Venues and Expert Vendors
-              </h2>
-              <div class="initial-section__btn-wrap">
-                <button type="button" class="btn btn-light">Browse NYC</button>
-                <button type="button" class="btn btn-light">Browse LA</button>
-              </div>
-              <div class="initial-section__bottom-container">
-                <div>
-                  <button type="button" class="btn-play">
-                    <i class="icon icon-play-arrow-outline-rounded"></i>
-                    Play Video
-                  </button>
-                </div>
-                <div>
-                  <button type="button" class="initial__btn-arrow">
-                    <div>Explore more</div>
-                    <i class="icon icon-back-rounded"></i>
-                  </button>
-                </div>
-                <div>
-                  <ul class="initial-section__pagination">
-                    <li class="initial-section__pagination-item active"></li>
-                    <li class="initial-section__pagination-item"></li>
-                    <li class="initial-section__pagination-item"></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="initial-section__gallery-container">
-              <h3 class="initial-section__gallery-container__heading">
-                Stunning event venues
-              </h3>
-              <div class="initial-section__gallery-container__content">
-                Browse Our Unique Selection of Spaces
-              </div>
-              <ul class="initial-section__gallery-list">
-                <li class="initial-section__gallery-item">
-                  <a href="#">
-                    <figure class="gallery-item__pic">
-                      <img src="./assets/initial/card1.jpg" alt="" />
-                    </figure>
-                    <div class="gallery-item__text-wrap">
-                      <div class="initial-section__location">FIDI, NY</div>
-                      <div class="gallery-item__title">180 Maiden Lane</div>
-                      <div class="gallery-item__content">
-                        The heart of the Financial District… 180 Maiden is the
-                        premier space for everything New York City.
+            <div class="initial-wrap">
+              <div
+                class="initial-section__pic-container initial-main-gallery"
+                id="main-slider"
+              >
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide initial-main-gallery__item">
+                    <a href="">
+                      <figure class="initial-main-gallery__pic">
+                        <img src="./assets/main-pic.png" alt="" />
+                      </figure>
+                      <div class="initial-main-gallery__text-container">
+                        <h2 class="initial-section__heading">
+                          Book Stunning Venues and Expert Vendors
+                        </h2>
+                        <div class="initial-section__btn-wrap">
+                          <button type="button" class="btn btn-outline">
+                            Browse NYC
+                          </button>
+                          <button type="button" class="btn btn-outline">
+                            Browse LA
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="initial-section__gallery-item">
-                  <a href="#">
-                    <figure class="gallery-item__pic">
-                      <img src="./assets/initial/card2.jpg" alt="" />
-                    </figure>
-                    <div class="gallery-item__text-wrap">
-                      <div class="initial-section__location">
-                        Greenwhich, NY
+                      <button type="button" class="btn-play">
+                        <i class="icon icon-play-arrow-outline-rounded"></i>
+                        Play Video
+                      </button>
+                    </a>
+                  </li>
+                  <li class="swiper-slide initial-main-gallery__item">
+                    <a href="">
+                      <figure class="initial-main-gallery__pic">
+                        <img src="./assets/main-pic.png" alt="" />
+                      </figure>
+                      <div class="initial-main-gallery__text-container">
+                        <h2 class="initial-section__heading">
+                          Book Stunning Venues and Expert Vendors
+                        </h2>
+                        <div class="initial-section__btn-wrap">
+                          <button type="button" class="btn btn-outline">
+                            Browse NYC
+                          </button>
+                          <button type="button" class="btn btn-outline">
+                            Browse LA
+                          </button>
+                        </div>
                       </div>
-                      <div class="gallery-item__title">160 Varicke</div>
-                      <div class="gallery-item__content">
-                        Incredible white box space is conveniently located on
-                        the border of Greenwich Village and Soho, and steps from
-                        multiple subway stations.
+                      <button type="button" class="btn-play">
+                        <i class="icon icon-play-arrow-outline-rounded"></i>
+                        Play Video
+                      </button>
+                    </a>
+                  </li>
+                  <li class="swiper-slide initial-main-gallery__item">
+                    <a href="">
+                      <figure class="initial-main-gallery__pic">
+                        <img src="./assets/main-pic.png" alt="" />
+                      </figure>
+                      <div class="initial-main-gallery__text-container">
+                        <h2 class="initial-section__heading">
+                          Book Stunning Venues and Expert Vendors
+                        </h2>
+                        <div class="initial-section__btn-wrap">
+                          <button type="button" class="btn btn-outline">
+                            Browse NYC
+                          </button>
+                          <button type="button" class="btn btn-outline">
+                            Browse LA
+                          </button>
+                        </div>
                       </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="initial-section__gallery-item">
-                  <a href="#">
-                    <figure class="gallery-item__pic">
-                      <img src="./assets/initial/card3.jpg" alt="" />
-                    </figure>
-                    <div class="gallery-item__text-wrap">
-                      <div class="initial-section__location">Brooklyn, NY</div>
-                      <div class="gallery-item__title">Avant Gardner</div>
-                      <div class="gallery-item__content">
-                        Our 80,000 square foot venue complex occupies an entire
-                        city block of industrial East Williamsburg,
-                      </div>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="initial-section__company-container">
-              <h3 class="initial-section__company-container__heading">
-                Trusted by
-              </h3>
-              <ul class="initial-section__company-list">
-                <li class="initial-section__company-item company-item__aplle">
-                  <img src="./assets/initial/apple.svg" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/cisco.png" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/meta.svg" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/mood.svg" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/freshworks.svg" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/eight-sleep.svg" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/conversica.svg" alt="" />
-                </li>
+                      <button type="button" class="btn-play">
+                        <i class="icon icon-play-arrow-outline-rounded"></i>
+                        Play Video
+                      </button>
+                    </a>
+                  </li>
+                </ul>
 
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/ease.svg" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/xerox.svg" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/philz.svg" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/oracle.svg" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/hallmark.svg" alt="" />
-                </li>
-                <li class="initial-section__company-item">
-                  <img src="./assets/initial/lwcc.svg" alt="" />
-                </li>
-              </ul>
+                <div class="swiper-pagination"></div>
+
+                <div>
+                  <div class="initial-section__bottom-container">
+                    <button type="button" class="initial__btn-arrow">
+                      <div>Explore more</div>
+                      <i class="icon icon-back-rounded"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!--Initial Slider-->
+              <div
+                class="initial-section__gallery-container slider__gallery-container"
+                id="initial-slider"
+              >
+                <h3 class="initial-section__gallery-container__heading">
+                  Stunning event venues
+                </h3>
+                <div class="initial-section__gallery-container__content">
+                  Browse Our Unique Selection of Spaces
+                </div>
+
+                <ul class="initial-section__gallery-list swiper-wrapper">
+                  <li
+                    class="initial-section__gallery-item swiper-slide pink-animation"
+                  >
+                    <a href="#">
+                      <figure class="gallery-item__pic">
+                        <img src="./assets/initial/card1.jpg" alt="" />
+                      </figure>
+                      <div class="gallery-item__text-wrap">
+                        <div class="initial-section__location">FIDI, NY</div>
+                        <div class="gallery-item__title">180 Maiden Lane</div>
+                        <div class="gallery-item__content">
+                          The heart of the Financial District… 180 Maiden is the
+                          premier space for everything New York City.
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="initial-section__gallery-item swiper-slide blue-animation"
+                  >
+                    <a href="#">
+                      <figure class="gallery-item__pic">
+                        <img src="./assets/initial/card2.jpg" alt="" />
+                      </figure>
+                      <div class="gallery-item__text-wrap">
+                        <div class="initial-section__location">
+                          Greenwhich, NY
+                        </div>
+                        <div class="gallery-item__title">160 Varicke</div>
+                        <div class="gallery-item__content">
+                          Incredible white box space is conveniently located on
+                          the border of Greenwich Village and Soho, and steps
+                          from multiple subway stations.
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="initial-section__gallery-item swiper-slide yellow-animation"
+                  >
+                    <a href="#">
+                      <figure class="gallery-item__pic">
+                        <img src="./assets/initial/card3.jpg" alt="" />
+                      </figure>
+                      <div class="gallery-item__text-wrap">
+                        <div class="initial-section__location">
+                          Brooklyn, NY
+                        </div>
+                        <div class="gallery-item__title">Avant Gardner</div>
+                        <div class="gallery-item__content">
+                          Our 80,000 square foot venue complex occupies an
+                          entire city block of industrial East Williamsburg,
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="initial-section__gallery-item swiper-slide pink-animation"
+                  >
+                    <a href="#">
+                      <figure class="gallery-item__pic">
+                        <img src="./assets/initial/card1.jpg" alt="" />
+                      </figure>
+                      <div class="gallery-item__text-wrap">
+                        <div class="initial-section__location">FIDI, NY</div>
+                        <div class="gallery-item__title">180 Maiden Lane</div>
+                        <div class="gallery-item__content">
+                          The heart of the Financial District… 180 Maiden is the
+                          premier space for everything New York City.
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="initial-section__gallery-item swiper-slide blue-animation"
+                  >
+                    <a href="#">
+                      <figure class="gallery-item__pic">
+                        <img src="./assets/initial/card2.jpg" alt="" />
+                      </figure>
+                      <div class="gallery-item__text-wrap">
+                        <div class="initial-section__location">
+                          Greenwhich, NY
+                        </div>
+                        <div class="gallery-item__title">160 Varicke</div>
+                        <div class="gallery-item__content">
+                          Incredible white box space is conveniently located on
+                          the border of Greenwich Village and Soho, and steps
+                          from multiple subway stations.
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li
+                    class="initial-section__gallery-item swiper-slide yellow-animation"
+                  >
+                    <a href="#">
+                      <figure class="gallery-item__pic">
+                        <img src="./assets/initial/card3.jpg" alt="" />
+                      </figure>
+                      <div class="gallery-item__text-wrap">
+                        <div class="initial-section__location">
+                          Brooklyn, NY
+                        </div>
+                        <div class="gallery-item__title">Avant Gardner</div>
+                        <div class="gallery-item__content">
+                          Our 80,000 square foot venue complex occupies an
+                          entire city block of industrial East Williamsburg,
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="slider-gallery-buttons">
+                  <div class="slider-btn-wrap swiper-button-prev">
+                    <button type="button" class="slider-btn left"></button>
+                  </div>
+                  <div class="slider-btn-wrap swiper-button-next">
+                    <button type="button" class="slider-btn right"></button>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="initial-section__company-container">
+                <h3 class="initial-section__company-container__heading">
+                  Trusted by
+                </h3>
+                <ul class="initial-section__company-list">
+                  <li class="initial-section__company-item company-item__aplle">
+                    <img src="./assets/initial/apple.svg" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/cisco.png" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/meta.svg" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/mood.svg" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/freshworks.svg" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/eight-sleep.svg" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/conversica.svg" alt="" />
+                  </li>
+
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/ease.svg" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/xerox.svg" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/philz.svg" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/oracle.svg" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/hallmark.svg" alt="" />
+                  </li>
+                  <li class="initial-section__company-item">
+                    <img src="./assets/initial/lwcc.svg" alt="" />
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
@@ -368,7 +510,6 @@
             <div class="expert-vendors-section__subheading">
               Search BLACE's Trusted Vendor Network
             </div>
-
             <div class="expert-vendors__btn-wrap">
               <div class="btn-wrap">
                 <button type="button" class="btn btn-light">
@@ -381,109 +522,219 @@
                 </button>
               </div>
             </div>
-            <ul class="expert-vendors-section__cards-list">
-              <li class="expert-vendors-section__card-item">
-                <a href="#">
-                  <figure class="expert-vendors-section__pic">
-                    <img src="./assets/expert-vendors/1.jpg" alt="" />
-                  </figure>
-                  <div class="expert-vendors-section__inner">
-                    <div class="expert-vendors-section__inner__box">
-                      <div class="card-item__currency">
-                        <span class="currency__item active">$</span>
-                        <span class="currency__item active">$</span>
-                        <span class="currency__item active">$</span>
-                        <span class="currency__item">$</span>
+
+            <div
+              class="slider__gallery-container swiper-wrapper expert-vendors__slider"
+              id="vendors-slider"
+            >
+              <ul class="expert-vendors-section__cards-list swiper-wrapper">
+                <li class="expert-vendors-section__card-item swiper-slide">
+                  <a href="#">
+                    <figure class="expert-vendors-section__pic">
+                      <img src="./assets/expert-vendors/1.jpg" alt="" />
+                    </figure>
+                    <div class="expert-vendors-section__inner">
+                      <div class="expert-vendors-section__inner__box">
+                        <div class="card-item__currency">
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item">$</span>
+                        </div>
+                        <div class="card-item__category">Catering</div>
                       </div>
-                      <div class="card-item__category">Catering</div>
-                    </div>
-                    <div class="card-item__title">Abigail Kirsch</div>
-                    <div class="card-item__content">
-                      As NYC’s market leader in catering and events, Abigail
-                      Kirsch takes great pride in driving culinary trends.
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="expert-vendors-section__card-item">
-                <a href="#">
-                  <figure class="expert-vendors-section__pic">
-                    <img src="./assets/expert-vendors/2.jpg" alt="" />
-                  </figure>
-                  <div class="expert-vendors-section__inner">
-                    <div class="expert-vendors-section__inner__box">
-                      <div class="card-item__currency">
-                        <span class="currency__item active">$</span>
-                        <span class="currency__item">$</span>
-                        <span class="currency__item">$</span>
-                        <span class="currency__item">$</span>
+                      <div class="card-item__title">Abigail Kirsch</div>
+                      <div class="card-item__content">
+                        As NYC’s market leader in catering and events, Abigail
+                        Kirsch takes great pride in driving culinary trends.
                       </div>
-                      <div class="card-item__category">Entertainment</div>
                     </div>
-                    <div class="card-item__title">Acute Inflections</div>
-                    <div class="card-item__content">
-                      A velvety mix of Erykah Badu & Billie Holiday paired with
-                      the cool grooves of her 007 on bass
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="expert-vendors-section__card-item">
-                <a href="#">
-                  <figure class="expert-vendors-section__pic">
-                    <img src="./assets/expert-vendors/3.jpg" alt="" />
-                  </figure>
-                  <div class="expert-vendors-section__inner">
-                    <div class="expert-vendors-section__inner__box">
-                      <div class="card-item__currency">
-                        <span class="currency__item active">$</span>
-                        <span class="currency__item active">$</span>
-                        <span class="currency__item active">$</span>
-                        <span class="currency__item">$</span>
+                  </a>
+                </li>
+                <li class="expert-vendors-section__card-item swiper-slide">
+                  <a href="#">
+                    <figure class="expert-vendors-section__pic">
+                      <img src="./assets/expert-vendors/2.jpg" alt="" />
+                    </figure>
+                    <div class="expert-vendors-section__inner">
+                      <div class="expert-vendors-section__inner__box">
+                        <div class="card-item__currency">
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item">$</span>
+                          <span class="currency__item">$</span>
+                          <span class="currency__item">$</span>
+                        </div>
+                        <div class="card-item__category">Entertainment</div>
                       </div>
-                      <div class="card-item__category">Floral & Decor</div>
-                    </div>
-                    <div class="card-item__title">AbigailBig Apple Florist</div>
-                    <div class="card-item__content">
-                      ABig Apple Florist has been New York City’s premier
-                      florist since 1991. Our studio is located directly in the
-                      heart of Midtown Manhattan.
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="expert-vendors-section__card-item">
-                <a href="#">
-                  <figure class="expert-vendors-section__pic">
-                    <img src="./assets/expert-vendors/1.jpg" alt="" />
-                  </figure>
-                  <div class="expert-vendors-section__inner">
-                    <div class="expert-vendors-section__inner__box">
-                      <div class="card-item__currency">
-                        <span class="currency__item active">$</span>
-                        <span class="currency__item active">$</span>
-                        <span class="currency__item active">$</span>
-                        <span class="currency__item">$</span>
+                      <div class="card-item__title">Acute Inflections</div>
+                      <div class="card-item__content">
+                        A velvety mix of Erykah Badu & Billie Holiday paired
+                        with the cool grooves of her 007 on bass
                       </div>
-                      <div class="card-item__category">Catering</div>
                     </div>
-                    <div class="card-item__title">Bartleby & Sage</div>
-                    <div class="card-item__content">
-                      Bartleby & Sage is a fine catering and event planning
-                      company based in Brooklyn, New York.
+                  </a>
+                </li>
+                <li class="expert-vendors-section__card-item swiper-slide">
+                  <a href="#">
+                    <figure class="expert-vendors-section__pic">
+                      <img src="./assets/expert-vendors/3.jpg" alt="" />
+                    </figure>
+                    <div class="expert-vendors-section__inner">
+                      <div class="expert-vendors-section__inner__box">
+                        <div class="card-item__currency">
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item">$</span>
+                        </div>
+                        <div class="card-item__category">Floral & Decor</div>
+                      </div>
+                      <div class="card-item__title">
+                        AbigailBig Apple Florist
+                      </div>
+                      <div class="card-item__content">
+                        ABig Apple Florist has been New York City’s premier
+                        florist since 1991. Our studio is located directly in
+                        the heart of Midtown Manhattan.
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+                  </a>
+                </li>
+                <li class="expert-vendors-section__card-item swiper-slide">
+                  <a href="#">
+                    <figure class="expert-vendors-section__pic">
+                      <img src="./assets/expert-vendors/1.jpg" alt="" />
+                    </figure>
+                    <div class="expert-vendors-section__inner">
+                      <div class="expert-vendors-section__inner__box">
+                        <div class="card-item__currency">
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item">$</span>
+                        </div>
+                        <div class="card-item__category">Catering</div>
+                      </div>
+                      <div class="card-item__title">Bartleby & Sage</div>
+                      <div class="card-item__content">
+                        Bartleby & Sage is a fine catering and event planning
+                        company based in Brooklyn, New York.
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="expert-vendors-section__card-item swiper-slide">
+                  <a href="#">
+                    <figure class="expert-vendors-section__pic">
+                      <img src="./assets/expert-vendors/1.jpg" alt="" />
+                    </figure>
+                    <div class="expert-vendors-section__inner">
+                      <div class="expert-vendors-section__inner__box">
+                        <div class="card-item__currency">
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item">$</span>
+                        </div>
+                        <div class="card-item__category">Catering</div>
+                      </div>
+                      <div class="card-item__title">Abigail Kirsch</div>
+                      <div class="card-item__content">
+                        As NYC’s market leader in catering and events, Abigail
+                        Kirsch takes great pride in driving culinary trends.
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="expert-vendors-section__card-item swiper-slide">
+                  <a href="#">
+                    <figure class="expert-vendors-section__pic">
+                      <img src="./assets/expert-vendors/2.jpg" alt="" />
+                    </figure>
+                    <div class="expert-vendors-section__inner">
+                      <div class="expert-vendors-section__inner__box">
+                        <div class="card-item__currency">
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item">$</span>
+                          <span class="currency__item">$</span>
+                          <span class="currency__item">$</span>
+                        </div>
+                        <div class="card-item__category">Entertainment</div>
+                      </div>
+                      <div class="card-item__title">Acute Inflections</div>
+                      <div class="card-item__content">
+                        A velvety mix of Erykah Badu & Billie Holiday paired
+                        with the cool grooves of her 007 on bass
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="expert-vendors-section__card-item swiper-slide">
+                  <a href="#">
+                    <figure class="expert-vendors-section__pic">
+                      <img src="./assets/expert-vendors/3.jpg" alt="" />
+                    </figure>
+                    <div class="expert-vendors-section__inner">
+                      <div class="expert-vendors-section__inner__box">
+                        <div class="card-item__currency">
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item">$</span>
+                        </div>
+                        <div class="card-item__category">Floral & Decor</div>
+                      </div>
+                      <div class="card-item__title">
+                        AbigailBig Apple Florist
+                      </div>
+                      <div class="card-item__content">
+                        ABig Apple Florist has been New York City’s premier
+                        florist since 1991. Our studio is located directly in
+                        the heart of Midtown Manhattan.
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="expert-vendors-section__card-item swiper-slide">
+                  <a href="#">
+                    <figure class="expert-vendors-section__pic">
+                      <img src="./assets/expert-vendors/1.jpg" alt="" />
+                    </figure>
+                    <div class="expert-vendors-section__inner">
+                      <div class="expert-vendors-section__inner__box">
+                        <div class="card-item__currency">
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item active">$</span>
+                          <span class="currency__item">$</span>
+                        </div>
+                        <div class="card-item__category">Catering</div>
+                      </div>
+                      <div class="card-item__title">Bartleby & Sage</div>
+                      <div class="card-item__content">
+                        Bartleby & Sage is a fine catering and event planning
+                        company based in Brooklyn, New York.
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="slider-gallery-buttons">
+                <div class="slider-btn-wrap swiper-button-prev">
+                  <button type="button" class="slider-btn left"></button>
+                </div>
+                <div class="slider-btn-wrap swiper-button-next">
+                  <button type="button" class="slider-btn right"></button>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </section>
         <!--/Expert Vendors -->
 
         <!-- Stay in the Know -->
-        <section
-          class="page-section page-section_light stay-in-the-know-section"
-        >
+        <section class="page-section page-section_light stay-in-the-know-section">
           <div class="layout">
             <div class="stay-in-the-know-section__text-container">
               <div class="stay-in-the-know-section__text-wrap">
@@ -781,9 +1032,9 @@
                 </div>
                 <div class="input-wrap">
                   <input class="input" type="email" placeholder="Email" />
-                    <button type="button" class="form__content-btn">
-                        <i class="icon icon-send"></i>
-                    </button>
+                  <button type="button" class="form__content-btn">
+                    <i class="icon icon-send"></i>
+                  </button>
                 </div>
               </div>
               <ul class="social-media__list">

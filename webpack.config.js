@@ -41,10 +41,12 @@ const config = {
     rules: [
       {
         test: /\.s[ac]ss$/i,
+        sideEffects: true,
         use: [stylesHandler, "css-loader", "postcss-loader", "sass-loader"],
       },
       {
         test: /\.css$/i,
+        sideEffects: true,
         use: [stylesHandler, "css-loader", "postcss-loader"],
       },
       {

@@ -1,6 +1,6 @@
 :root {
-  --font-heading-name: 'Playfair Display', serif;
-  --font-body-name: 'Poppins', sans-serif;
+  --font-heading-name: "Playfair Display", serif;
+  --font-body-name: "Poppins", sans-serif;
 
   --font-heading-primary: 700 60px / 110% var(--font-heading-name);
   --font-heading-secondary: 700 40px / 120% var(--font-heading-name);
@@ -21,36 +21,42 @@
   --section-padding: 60px;
 
   //text-colors
-  --text-black: #20202C;
-  --text-white: #FFFFFF;
-  --text-blue: #2E54EB;
+  --text-black: #20202c;
+  --text-white: #ffffff;
+  --text-blue: #2e54eb;
 
   //sections-colors
-  --header-color: rgba(34, 34, 34, 0.80);
+  --header-color: rgba(34, 34, 34, 0.8);
   --section-color-dark: #222222;
-  --section-color-light: #FFFFFF;
-  --section-color-blue: linear-gradient(90deg, rgba(95, 152, 240, 0.70) 4.69%, rgba(46, 84, 235, 0.70) 83.33%), #2E54EB;
-
+  --section-color-light: #ffffff;
+  --section-color-blue: linear-gradient(
+      90deg,
+      rgba(95, 152, 240, 0.7) 4.69%,
+      rgba(46, 84, 235, 0.7) 83.33%
+    ),
+    #2e54eb;
 }
 
 section {
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     text-align: center;
   }
 }
 
 @include breakpoint(medium) {
-   :root {
-     --font-heading-primary: 700 80px / 110% var(--font-heading-name);
-     --font-heading-secondary: 700 40px / 120% var(--font-heading-name);
-     --font-gallery-title: 600 25px / 25px var(--font-body-name);
-     --font-gallery-content: 300 18px / 140% var(--font-body-name);
-     --font-subheading: 300 25px / 140% var(--font-body-name);
-     --font-link: 500 12px / 0.56 var(--font-body-name);
-     --section-padding: 50px;
-     --gallery-spacing: 30px;
-   }
- }
+  :root {
+    --font-heading-primary: 700 80px / 110% var(--font-heading-name);
+    --font-heading-secondary: 700 40px / 120% var(--font-heading-name);
+    --font-gallery-title: 600 25px / 25px var(--font-body-name);
+    --font-gallery-content: 300 18px / 140% var(--font-body-name);
+    --font-subheading: 300 25px / 140% var(--font-body-name);
+    --font-link: 500 12px / 0.56 var(--font-body-name);
+    --section-padding: 50px;
+    --gallery-spacing: 30px;
+  }
+}
 
 @include breakpoint(large) {
   :root {
@@ -62,22 +68,18 @@ section {
   }
 
   section {
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
       text-align: left;
     }
   }
 }
 
-  @include breakpoint(x-large) {
-    :root {
-      --font-heading-primary: 700 116px / 110% var(--font-heading-name);
-      --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
-      --font-link: 500 14x / 0.56 var(--font-body-name);
-    }
-
-
-
+@include breakpoint(x-large) {
+  :root {
+    --font-heading-primary: 700 116px / 110% var(--font-heading-name);
+    --font-heading-secondary: 700 72px / 120% var(--font-heading-name);
+    --font-link: 500 14x / 0.56 var(--font-body-name);
+  }
 }
-
-
-

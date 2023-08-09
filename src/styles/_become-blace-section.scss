@@ -1,12 +1,9 @@
-
 .become-blace-section {
   padding: var(--section-padding) 0 var(--section-padding) 0;
-
 
   @include breakpoint(large) {
     padding: 120px 0 120px 0;
   }
-
 }
 
 .blace-section__btn-container {
@@ -38,7 +35,6 @@
   color: var(--text-black);
   text-transform: capitalize;
   margin-bottom: var(--section-padding);
-
 
   @include breakpoint(x-large) {
     margin-bottom: 66px;
@@ -74,7 +70,7 @@
 .become-blace-section__inner {
   display: flex;
   align-items: center;
-  background: #FFF;
+  background: #fff;
   justify-content: center;
   flex-direction: column;
 
@@ -82,4 +78,3 @@
     flex-direction: row;
   }
 }
-

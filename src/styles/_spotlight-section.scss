@@ -1,7 +1,6 @@
 .spotlight-section {
   padding: var(--section-padding) 0;
 
-
   @include breakpoint(x-large) {
     padding: 120px 0;
   }
@@ -50,7 +49,6 @@
     align-self: flex-start;
 
     &:before {
-
       @extend .icon;
       @extend .icon-arrow-right;
       font-size: 18px;
@@ -84,7 +82,6 @@
   &:nth-child(4) {
     grid-column: span 2;
   }
-
 
   a {
     min-height: var(--gallery-item-height);

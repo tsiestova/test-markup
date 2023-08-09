@@ -1,9 +1,19 @@
-
 .expert-vendors-section {
   padding: var(--section-padding) 0;
 
+  .layout {
+    overflow: hidden;
+  }
+
   @include breakpoint(x-large) {
     padding: 120px 0;
+  }
+}
+
+.expert-vendors__slider {
+  .slider-gallery-buttons {
+    top: -80px;
+    right: 80px;
   }
 }
 
@@ -53,25 +63,21 @@
     text-align: left;
   }
 
-
   @include breakpoint(x-large) {
     font-size: 26px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.26px;
-
   }
 }
 
 .expert-vendors-section__cards-list {
   display: flex;
-  flex-wrap: wrap;
   gap: var(--gallery-spacing);
-  //height: auto;
+  position: relative;
 
   @include breakpoint(large) {
-    flex-wrap: nowrap;
     gap: 20px;
   }
 
@@ -86,11 +92,11 @@
 
 .expert-vendors-section__card-item {
   border-radius: 2px 2px 12px 12px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   width: 100%;
+  height: auto !important;
 
   a {
-
     display: block;
     height: 100%;
   }
@@ -104,7 +110,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 31.992px;
-    color: #6D5F5F;
+    color: #6d5f5f;
 
     &.active {
       color: var(--text-white);
@@ -141,7 +147,6 @@
   }
 
   .card-item__content {
-
     color: var(--text-white);
     font: var(--font-gallery-content);
 
@@ -152,8 +157,6 @@
       line-height: 28px;
     }
   }
-
-
 }
 
 .expert-vendors-section__inner__box {
